@@ -51,7 +51,8 @@
   "projects": {
     "eyebrow": "SELECTED PROJECTS",
     "title": "Design in service of AI",
-    "viewCase": "View case →"
+    "viewCase": "View case →",
+    "deepDive": "Full technical analysis ↓"
   },
   "about": {
     "eyebrow": "ABOUT",
