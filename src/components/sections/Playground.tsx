@@ -11,7 +11,12 @@ const CHALLENGES = [
 
 type State = "idle" | "streaming" | "done";
 
-export function Playground() {
+interface PlaygroundProps {
+  /** Si true, supprime le wrapper <section> externe (utilisé dans PitchPlayground) */
+  embedded?: boolean;
+}
+
+export function Playground({ embedded = false }: PlaygroundProps) {
   const t = useTranslations("playground");
   const [selected, setSelected] = useState<string | null>(null);
   const [response, setResponse] = useState("");
@@ -58,11 +63,9 @@ export function Playground() {
     setStreamState("idle");
   };
 
-  return (
-    <section id="playground" className="py-6 px-6 lg:px-8">
-      <div className="mx-auto max-w-[1280px]">
+  const inner = (
         <div
-          className="rounded-[24px] bg-lime px-8 py-12 md:px-14 md:py-16"
+          className={`bg-lime h-full ${embedded ? "px-8 py-12 md:px-14 md:py-16 rounded-none" : "rounded-[24px] px-8 py-12 md:px-14 md:py-16"}`}
         >
           {/* Eyebrow */}
           <p className="font-eyebrow text-ink/50 mb-6">{t("eyebrow")}</p>
@@ -132,6 +135,14 @@ export function Playground() {
             </div>
           )}
         </div>
+  );
+
+  if (embedded) return <div className="w-full">{inner}</div>;
+
+  return (
+    <section id="playground" className="py-6 px-6 lg:px-8">
+      <div className="mx-auto max-w-[1280px]">
+        {inner}
       </div>
     </section>
   );

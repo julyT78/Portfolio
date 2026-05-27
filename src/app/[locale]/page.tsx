@@ -1,6 +1,6 @@
-import { Hero } from "@/components/sections/Hero";
+import { PresentationHero } from "@/components/sections/PresentationHero";
+import { PitchPlayground } from "@/components/sections/PitchPlayground";
 import { MarqueeStrip } from "@/components/layout/MarqueeStrip";
-import { Playground } from "@/components/sections/Playground";
 import { Projects } from "@/components/sections/Projects";
 import { AboutTeaser } from "@/components/sections/AboutTeaser";
 import { ContactCTA } from "@/components/sections/ContactCTA";
@@ -8,9 +8,9 @@ import { ContactCTA } from "@/components/sections/ContactCTA";
 export default function HomePage() {
   return (
     <>
-      <Hero />
+      <PresentationHero />
+      <PitchPlayground />
       <MarqueeStrip />
-      <Playground />
       <Projects />
       <AboutTeaser />
       <ContactCTA />

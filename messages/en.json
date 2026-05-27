@@ -13,6 +13,24 @@
     "ctaPrimary": "View my projects →",
     "ctaSecondary": "Discover the Playground"
   },
+  "presentationHero": {
+    "eyebrow": "AI ORCHESTRATOR & UX DESIGNER — PARIS",
+    "headline": "I design interfaces for AI.",
+    "tagline": "The orchestrator is the new designer. I design the workflows that make AI systems reason, from agent mapping to the interface that drives them.",
+    "ctaPrimary": "View my projects →",
+    "ctaSecondary": "Try the Playground →"
+  },
+  "pitchPlayground": {
+    "eyebrow": "19 YEARS · DESIGN SYSTEM · AI SINCE 2024",
+    "title": "Designing for AI is a different craft.",
+    "body": "AI interfaces don't respond — they reason, hesitate, err and self-correct. Designing for them means architecting uncertainty as much as screens.",
+    "metric1Value": "19",
+    "metric1Label": "years experience",
+    "metric2Value": "8+",
+    "metric2Label": "enterprise clients",
+    "metric3Value": "AI",
+    "metric3Label": "speciality since 2024"
+  },
   "playground": {
     "eyebrow": "AI PLAYGROUND",
     "title": "What AI design challenge concerns you?",

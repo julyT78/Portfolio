@@ -13,6 +13,24 @@
     "ctaPrimary": "Voir mes projets →",
     "ctaSecondary": "Découvrir le Playground"
   },
+  "presentationHero": {
+    "eyebrow": "AI ORCHESTRATOR & UX DESIGNER — PARIS",
+    "headline": "Je conçois des interfaces pour l'IA.",
+    "tagline": "L'orchestrateur, c'est le nouveau designer. Je conçois les workflows qui font raisonner les systèmes IA, de la cartographie des agents à l'interface qui les pilote.",
+    "ctaPrimary": "Voir mes projets →",
+    "ctaSecondary": "Essayer le Playground →"
+  },
+  "pitchPlayground": {
+    "eyebrow": "19 ANS · DESIGN SYSTEM · IA DEPUIS 2024",
+    "title": "Concevoir pour l'IA, c'est un autre métier.",
+    "body": "Les interfaces IA ne répondent pas — elles raisonnent, hésitent, se trompent et se corrigent. Concevoir pour elles, c'est architecturer l'incertitude autant que les écrans.",
+    "metric1Value": "19",
+    "metric1Label": "ans d'expérience",
+    "metric2Value": "8+",
+    "metric2Label": "clients grands comptes",
+    "metric3Value": "IA",
+    "metric3Label": "spécialité depuis 2024"
+  },
   "playground": {
     "eyebrow": "PLAYGROUND IA",
     "title": "Quel défi de design IA vous préoccupe ?",
