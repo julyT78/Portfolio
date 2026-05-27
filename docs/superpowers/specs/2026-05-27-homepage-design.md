@@ -50,13 +50,13 @@ Inspirée du portfolio juliencoudert.com. Fond blanc, très généreux padding v
 |---|---|---|
 | Eyebrow | `AI Orchestrator & UX Designer — Paris` | `font-mono`, 10px, uppercase, `ink/40` |
 | Headline | `Je conçois des interfaces pour l'IA.` | `display-xl` (clamp 48–86px), weight 340, 3 lignes |
-| Tagline | Version courte de la phrase du layout (max 55ch). Exemple : *"Je conçois les workflows qui font raisonner les systèmes IA — de la cartographie des agents à l'interface qui les pilote."* — à valider avec Julie avant implémentation. | 15px, weight 330, `ink/60`, line-height 1.55 |
+| Tagline | *"L'orchestrateur, c'est le nouveau designer. Je conçois les workflows qui font raisonner les systèmes IA — de la cartographie des chaînes d'agents à l'interface qui les pilote."* | 15px, weight 330, `ink/60`, line-height 1.55 |
 | CTA primaire | "Voir mes projets" → `#projets` | pill noir |
 | CTA secondaire | "Essayer le Playground →" → `#playground` | pill bordure |
 
 ### 4.2 Portrait fantôme (fond, z-index 1)
 
-- Photo de profil de Julie positionnée à droite (fichier à fournir dans `public/images/portrait.jpg` ou `.png`). Si la photo n'est pas disponible pour le MVP, remplacer par un placeholder SVG géométrique sobre.
+- **MVP : SVG géométrique abstrait** — formes simples rappelant une silhouette (cercle + rectangles), couleur `ink` à 100%, rendu à 7% d'opacité via le wrapper. Pas de photo pour le moment. La photo de profil pourra remplacer le SVG post-MVP sans changer la structure.
 - **Opacité : 7%** — effet atmosphérique, non intrusif
 - Pleine hauteur de la section, non cliquable (`pointer-events: none`)
 
