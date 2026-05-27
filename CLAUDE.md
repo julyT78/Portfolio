@@ -62,6 +62,60 @@ Do not skip to implementation before a spec exists.
 | `plan.md` | 5-phase project roadmap (French) |
 | `settings.local.json` | Claude Code permissions (git, bash, web fetch) |
 | `skills-lock.json` | Installed skill versions |
-| `PRODUCT.md` *(to create)* | Brand context required by `impeccable` |
-| `DESIGN.md` *(to create)* | Design tokens/system for `impeccable` |
+| `PRODUCT.md` | Brand context required by `impeccable` |
+| `DESIGN.md` | Design tokens/system for `impeccable` |
+| `docs/ARCHITECTURE.md` | Architecture technique globale |
+| `docs/ARCHITECTURE_Comparaison.md` | Comparaison des approches architecturales |
 | `docs/superpowers/specs/` *(to create)* | Spec documents output by `brainstorming` |
+
+
+## Aperçu de l'objectif du projet
+
+*(À compléter — décrire ici le positionnement, la cible et la promesse du portfolio.)*
+
+## Aperçu de l'architecture globale
+
+*(À compléter — voir `ARCHITECTURE.md` une fois créé.)*
+
+## Style visuel
+
+- Interface claire et minimaliste
+- **Pas de mode sombre pour le MVP** — thème clair uniquement
+
+## Contraintes et Politiques
+
+- **NE JAMAIS exposer les clés API côté client** — toutes les clés transitent par des variables d'environnement serveur (`.env.local`, jamais dans le bundle)
+
+## Dépendances
+
+- Préférer les composants existants plutôt que d'ajouter de nouvelles bibliothèques UI
+- Avant d'installer un nouveau package, vérifier si le besoin peut être couvert par une dépendance déjà présente
+
+## Testing UI (playwright-skill)
+
+À la fin de chaque développement impliquant l'interface graphique, tester avec **playwright-skill** :
+- L'interface doit être responsive
+- L'interface doit être fonctionnelle
+- L'interface doit répondre au besoin développé
+
+## Documentation
+
+| Fichier | Rôle |
+|---|---|
+| `PRODUCT.md` | Contexte produit, brand register, utilisateurs, ton |
+| `DESIGN.md` | Tokens de design, typographie, couleurs |
+| `docs/ARCHITECTURE.md` | Architecture technique globale du projet |
+| `docs/ARCHITECTURE_Comparaison.md` | Comparaison des approches architecturales |
+
+## Context7
+
+Utiliser **automatiquement** les outils MCP Context7 pour :
+- La génération de code
+- Les étapes de configuration ou d'installation
+- La documentation de bibliothèque/API
+
+Ne pas attendre une demande explicite — résoudre l'identifiant de bibliothèque et récupérer la documentation dès que le contexte l'exige.
+
+## Langue des spécifications
+
+Toutes les spécifications doivent être rédigées **en français**, y compris les specs OpenSpec (sections Purpose et Scenarios). Seuls les titres de Requirements restent en anglais avec les mots-clés `SHALL`/`MUST` pour la validation OpenSpec.
