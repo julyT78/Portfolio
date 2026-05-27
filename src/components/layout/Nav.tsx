@@ -2,14 +2,25 @@
 
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function Nav() {
   const t = useTranslations("nav");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 4);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-canvas border-b border-hairline">
+    <header
+      className={`sticky top-0 z-50 bg-canvas transition-shadow duration-200 ${
+        scrolled ? "border-b border-hairline" : "border-b border-transparent"
+      }`}
+    >
       <div className="mx-auto max-w-[1280px] px-6 lg:px-8 h-14 flex items-center justify-between">
 
         {/* Logo */}
@@ -19,8 +30,8 @@ export function Nav() {
           aria-label="Julie Tyrode — Accueil"
         >
           <svg
-            width="30"
-            height="38"
+            width="28"
+            height="36"
             viewBox="0 0 73 93"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
