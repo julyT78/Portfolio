@@ -52,3 +52,15 @@ env/
 # Claude/           ← inclus
 settings.local.json   # overrides locaux, jamais dans git
 *.local.json          # tout fichier *.local.json par précaution
+
+# ─── Next.js auto-générés ─────────────────────────────────────────────────────
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# ─── Playwright & screenshots de dev ─────────────────────────────────────────
+.playwright-mcp/
+
+# ─── Screenshots temporaires à la racine ─────────────────────────────────────
+/*.png
+/*.jpeg
+/*.jpg

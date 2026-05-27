@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "ctaPrimary": "Get in touch",
+    "ctaPlayground": "Playground ↓"
+  },
+  "hero": {
+    "eyebrow": "PRODUCT DESIGNER · AI ORCHESTRATOR · 19 YEARS",
+    "headline": "I design interfaces for the AI era",
+    "tagline": "Designing for AI means absorbing friction, latency and the unpredictable — and turning them into reliable experiences.",
+    "ctaPrimary": "View my projects →",
+    "ctaSecondary": "Discover the Playground"
+  },
+  "playground": {
+    "eyebrow": "AI PLAYGROUND",
+    "title": "What AI design challenge concerns you?",
+    "subtitle": "A Claude model responds with a design approach — in real time.",
+    "challenge1": "Managing generation latency",
+    "challenge2": "Making AI explainable",
+    "challenge3": "Avoiding UX hallucinations",
+    "thinking": "Analysing...",
+    "reset": "Another challenge →"
+  },
+  "projects": {
+    "eyebrow": "SELECTED PROJECTS",
+    "title": "Design in service of AI",
+    "viewCase": "View case →"
+  },
+  "about": {
+    "eyebrow": "ABOUT",
+    "title": "19 years of design, an AI speciality",
+    "bio": "UX/UI expert certified in AI project management, I design interfaces that hold up against model unpredictability — from discovery to production. I integrate automation and prompt engineering directly into my workflow.",
+    "cta": "Learn more about my background →"
+  },
+  "contact": {
+    "eyebrow": "CONTACT",
+    "title": "An AI project in mind?",
+    "subtitle": "Freelance · Full-time · Consulting — AI Design focused",
+    "cta": "Send a message",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "tagline": "Design for the AI era",
+    "nav": "Navigation",
+    "projects": "Projects",
+    "legal": "Legal",
+    "copyright": "© 2026 JULIE TYRODE",
+    "mentions": "Legal notice",
+    "privacy": "Privacy policy"
+  }
+}

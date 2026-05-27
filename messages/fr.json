@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "projects": "Projets",
+    "about": "À propos",
+    "contact": "Contact",
+    "ctaPrimary": "Me contacter",
+    "ctaPlayground": "Playground ↓"
+  },
+  "hero": {
+    "eyebrow": "PRODUCT DESIGNER · AI ORCHESTRATOR · 19 ANS",
+    "headline": "Je conçois les interfaces de l'ère IA",
+    "tagline": "Concevoir pour l'IA, c'est absorber la friction, la latence et l'imprévisible — et les transformer en expériences fiables.",
+    "ctaPrimary": "Voir mes projets →",
+    "ctaSecondary": "Découvrir le Playground"
+  },
+  "playground": {
+    "eyebrow": "PLAYGROUND IA",
+    "title": "Quel défi de design IA vous préoccupe ?",
+    "subtitle": "Un modèle Claude répond avec une approche de design — en temps réel.",
+    "challenge1": "Gérer la latence de génération",
+    "challenge2": "Rendre l'IA explicable",
+    "challenge3": "Éviter les hallucinations UX",
+    "thinking": "Analyse en cours...",
+    "reset": "Autre défi →"
+  },
+  "projects": {
+    "eyebrow": "PROJETS SÉLECTIONNÉS",
+    "title": "Design au service de l'IA",
+    "viewCase": "Voir le cas →"
+  },
+  "about": {
+    "eyebrow": "À PROPOS",
+    "title": "19 ans de design, une spécialité IA",
+    "bio": "Experte UX/UI certifiée en gestion de projets IA, je conçois des interfaces qui tiennent face à l'imprévisibilité des modèles — de la phase discovery à la mise en production. J'intègre l'automatisation et le prompt engineering directement dans mon workflow.",
+    "cta": "En savoir plus sur mon parcours →"
+  },
+  "contact": {
+    "eyebrow": "CONTACT",
+    "title": "Une mission IA en vue ?",
+    "subtitle": "Freelance · CDI · Conseil — orientés AI Design",
+    "cta": "Envoyer un message",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "tagline": "Design à l'ère de l'IA",
+    "nav": "Navigation",
+    "projects": "Projets",
+    "legal": "Légal",
+    "copyright": "© 2026 JULIE TYRODE",
+    "mentions": "Mentions légales",
+    "privacy": "Confidentialité"
+  }
+}
