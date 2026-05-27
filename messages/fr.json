@@ -34,12 +34,19 @@
   "playground": {
     "eyebrow": "PLAYGROUND IA",
     "title": "Quel défi de design IA vous préoccupe ?",
-    "subtitle": "Un modèle Claude répond avec une approche de design — en temps réel.",
+    "subtitle": "Choisissez un challenge, ajustez la créativité.",
     "challenge1": "Gérer la latence de génération",
     "challenge2": "Rendre l'IA explicable",
     "challenge3": "Éviter les hallucinations UX",
+    "temperatureLabel": "Créativité",
+    "temperaturePrecis": "Précis",
+    "temperatureCreatif": "Créatif",
     "thinking": "Analyse en cours...",
-    "reset": "Autre défi →"
+    "responseLabel": "Approche de design",
+    "reset": "← Essayer un autre défi",
+    "errorMessage": "Une erreur est survenue.",
+    "retry": "Réessayer",
+    "ctaPostInteraction": "Vous souhaitez concevoir une UI d'agent similaire ? Discutons-en"
   },
   "projects": {
     "eyebrow": "PROJETS SÉLECTIONNÉS",

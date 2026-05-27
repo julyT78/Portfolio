@@ -34,12 +34,19 @@
   "playground": {
     "eyebrow": "AI PLAYGROUND",
     "title": "What AI design challenge concerns you?",
-    "subtitle": "A Claude model responds with a design approach — in real time.",
+    "subtitle": "Pick a challenge, adjust creativity.",
     "challenge1": "Managing generation latency",
     "challenge2": "Making AI explainable",
     "challenge3": "Avoiding UX hallucinations",
+    "temperatureLabel": "Creativity",
+    "temperaturePrecis": "Precise",
+    "temperatureCreatif": "Creative",
     "thinking": "Analysing...",
-    "reset": "Another challenge →"
+    "responseLabel": "Design approach",
+    "reset": "← Try another challenge",
+    "errorMessage": "Something went wrong.",
+    "retry": "Retry",
+    "ctaPostInteraction": "Want to design a similar agent UI? Let's talk"
   },
   "projects": {
     "eyebrow": "SELECTED PROJECTS",

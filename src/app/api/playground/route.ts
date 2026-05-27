@@ -5,11 +5,15 @@ export const runtime = "nodejs";
 
 export async function POST(req: NextRequest) {
   try {
-    const { challenge } = await req.json();
+    const { challenge, temperature } = await req.json();
 
     if (!challenge || typeof challenge !== "string" || challenge.length > 200) {
       return NextResponse.json({ error: "Paramètre invalide" }, { status: 400 });
     }
+
+    const temp = typeof temperature === "number" && temperature >= 0 && temperature <= 1
+      ? temperature
+      : 0.7;
 
     if (!process.env.ANTHROPIC_API_KEY) {
       // En développement sans clé : réponse simulée
@@ -24,6 +28,7 @@ export async function POST(req: NextRequest) {
     const stream = anthropic.messages.stream({
       model: "claude-sonnet-4-6",
       max_tokens: 200,
+      temperature: temp,
       system: SYSTEM_PROMPT,
       messages: [
         {
