@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     shortcut: "/favicon.svg",
   },
   openGraph: {
-    title: "Julie Tyrode — Product Designer & AI Orchestrator",
+    title: "Julie Tyrode — Product Designer & Agentic Workflow Designer",
     description:
-      "Je conçois les interfaces de l'ère IA. Concevoir pour l'IA, c'est absorber la friction, la latence et l'imprévisible.",
+      "L'orchestrateur, c'est le nouveau designer.  Je conçois les workflows qui font raisonner les systèmes IA - de la cartographie des chaînes d'agents à l'interface qui les pilote.",
     type: "website",
   },
 };
