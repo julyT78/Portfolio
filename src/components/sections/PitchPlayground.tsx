@@ -14,14 +14,14 @@ export function PitchPlayground() {
         <div className="grid md:grid-cols-2">
 
           {/* Colonne gauche — pitch */}
-          <div className="px-6 lg:px-8 py-16 md:py-20 border-b md:border-b-0 md:border-r border-hairline">
+          <div className="px-8 lg:px-14 py-16 md:py-24 border-b md:border-b-0 md:border-r border-hairline">
             <p className="font-eyebrow text-ink/40 mb-6">
               {t("eyebrow")}
             </p>
-            <h2 className="font-display-lg text-ink mb-6 max-w-[18ch]">
+            <h2 className="font-display-lg text-ink mb-6 max-w-[20ch]">
               {t("title")}
             </h2>
-            <p className="text-[17px] font-[320] text-ink/65 leading-[1.6] tracking-[-0.015em] max-w-[38ch]">
+            <p className="text-[15px] font-[330] text-ink/60 leading-[1.6] tracking-[-0.015em] max-w-[38ch]">
               {t("body")}
             </p>
 
@@ -47,7 +47,7 @@ export function PitchPlayground() {
           </div>
 
           {/* Colonne droite — Playground */}
-          <div className="flex items-stretch">
+          <div className="flex items-stretch md:min-h-[420px]">
             <Playground embedded />
           </div>
         </div>
