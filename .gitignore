@@ -47,7 +47,8 @@ venv/
 env/
 *.egg-info/
 
-# ─── Claude Code — inclus intentionnellement ─────────────────────────────────
+# ─── Claude Code ─────────────────────────────────────────────────────────────
 # .claude/          ← inclus (config projet Claude Code)
-# settings.local.json ← inclus (permissions Claude Code, pas de secrets)
 # Claude/           ← inclus
+settings.local.json   # overrides locaux, jamais dans git
+*.local.json          # tout fichier *.local.json par précaution
