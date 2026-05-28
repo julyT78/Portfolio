@@ -1,0 +1,6 @@
+# Exclure les images brutes du book portfolio (320 MB, non utilisées directement)
+# Seules les images dans public/images/projects/ sont déployées sur Vercel
+public/images/book/
+
+# Assets sources (non servis par Next.js)
+assets/

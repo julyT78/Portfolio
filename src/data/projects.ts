@@ -35,7 +35,7 @@ export const PROJECTS: ProjectData[] = [
     tagline: "Piloter l'IA pour fusionner design et code en temps réel",
     tags: ["IA Design", "Vibe Coding", "POC"],
     color: "bg-coral",
-    image: "/images/book/Softeam/Pulse.jpg",
+    image: "/images/projects/softeam/Pulse.jpg",
     href: "/projects/pulse",
     kpi: { value: "-60%", label: "cycle design→code" },
     deepDive:
@@ -73,8 +73,8 @@ export const PROJECTS: ProjectData[] = [
       "Méthodologie reproductible documentée pour l'agence",
     ],
     gallery: [
-      "/images/book/Softeam/Pulse.jpg",
-      "/images/book/3.png",
+      "/images/projects/softeam/Pulse.jpg",
+      "/images/projects/3.png",
     ],
   },
 
@@ -86,7 +86,7 @@ export const PROJECTS: ProjectData[] = [
     tagline: "Transformer l'IA en levier de valeur stratégique",
     tags: ["IA Design", "Coaching", "R&D"],
     color: "bg-lilac",
-    image: "/images/book/Softeam/SofteamBG.jpg",
+    image: "/images/projects/softeam/SofteamBG.jpg",
     href: "/projects/labo-ia",
     kpi: { value: "+8", label: "designers formés" },
     deepDive:
@@ -124,8 +124,8 @@ export const PROJECTS: ProjectData[] = [
       "Positionnement du design comme levier stratégique d'adoption IA",
     ],
     gallery: [
-      "/images/book/Softeam/SofteamBG.jpg",
-      "/images/book/5.png",
+      "/images/projects/softeam/SofteamBG.jpg",
+      "/images/projects/5.png",
     ],
   },
 
@@ -137,7 +137,7 @@ export const PROJECTS: ProjectData[] = [
     tagline: "Accélérer l'adoption de l'IA, sans perdre confiance",
     tags: ["IA Design", "Ateliers", "Design thinking"],
     color: "bg-mint",
-    image: "/images/book/Softeam/chantierIA.png",
+    image: "/images/projects/softeam/chantierIA.png",
     href: "/projects/chantier-ia",
     kpi: { value: "+6", label: "équipes embarquées" },
     deepDive:
@@ -170,8 +170,8 @@ export const PROJECTS: ProjectData[] = [
       "Montée en compétence rapide et valorisation personnelle des profils",
     ],
     gallery: [
-      "/images/book/Softeam/chantierIA.png",
-      "/images/book/7.png",
+      "/images/projects/softeam/chantierIA.png",
+      "/images/projects/7.png",
     ],
   },
 
@@ -183,7 +183,7 @@ export const PROJECTS: ProjectData[] = [
     tagline: "UI pour données complexes alignée aux Design Systems groupe",
     tags: ["UI Design", "Data viz", "Prototypes"],
     color: "bg-cream",
-    image: "/images/book/Laposte/PBI.png",
+    image: "/images/projects/laposte/PBI.png",
     href: "/projects/power-bi",
     kpi: { value: "-60%", label: "temps de création d'un rapport" },
     deepDive:
@@ -221,9 +221,9 @@ export const PROJECTS: ProjectData[] = [
       "Données chaudes visibles et actionnables dès l'ouverture du rapport",
     ],
     gallery: [
-      "/images/book/Laposte/PBI.png",
-      "/images/book/9.png",
-      "/images/book/10.png",
+      "/images/projects/laposte/PBI.png",
+      "/images/projects/9.png",
+      "/images/projects/10.png",
     ],
   },
 
@@ -235,7 +235,7 @@ export const PROJECTS: ProjectData[] = [
     tagline: "Concevoir chaque fonctionnalité d'un cloud européen face aux standards AWS",
     tags: ["UX Research", "Design System", "Ateliers"],
     color: "bg-lime",
-    image: "/images/book/numspot/numspotBG.svg",
+    image: "/images/projects/numspot/numspotBG.svg",
     href: "/projects/numspot",
     kpi: { value: "+20", label: "fonctionnalités conçues de zéro" },
     deepDive:
@@ -273,10 +273,10 @@ export const PROJECTS: ProjectData[] = [
       "Portail compétitif face aux standards AWS/Azure sur l'ergonomie",
     ],
     gallery: [
-      "/images/book/numspot/numspot16.png",
-      "/images/book/numspot/Numspot12.png",
-      "/images/book/numspot/numspotheuristique.webp",
-      "/images/book/numspot/numspot10.png",
+      "/images/projects/numspot/numspot16.png",
+      "/images/projects/numspot/Numspot12.png",
+      "/images/projects/numspot/numspotheuristique.webp",
+      "/images/projects/numspot/numspot10.png",
     ],
   },
 
@@ -288,7 +288,7 @@ export const PROJECTS: ProjectData[] = [
     tagline: "Concevoir les outils anti-fraude et compliance d'une banque mondiale",
     tags: ["Design System", "Ateliers", "Front-end"],
     color: "bg-pink",
-    image: "/images/book/Société_générale/SGBG.svg",
+    image: "/images/projects/societe-generale/SGBG.svg",
     href: "/projects/societe-generale",
     kpi: { value: "3 apps", label: "conformité livrées en 3 ans" },
     deepDive:
@@ -326,10 +326,10 @@ export const PROJECTS: ProjectData[] = [
       "Réduction du temps de traitement des alertes pour les experts conformité",
     ],
     gallery: [
-      "/images/book/Société_générale/MacBook Pro 16.png",
-      "/images/book/Société_générale/AccueilV4_2x.png",
-      "/images/book/Société_générale/040 Overview_2x.png",
-      "/images/book/Société_générale/S&E Investigation - Alert PAGE.png",
+      "/images/projects/societe-generale/MacBook Pro 16.png",
+      "/images/projects/societe-generale/AccueilV4_2x.png",
+      "/images/projects/societe-generale/040 Overview_2x.png",
+      "/images/projects/societe-generale/S&E Investigation - Alert PAGE.png",
     ],
   },
 ];
