@@ -57,7 +57,9 @@
   "about": {
     "eyebrow": "ABOUT",
     "title": "19 years of design, an AI speciality",
-    "bio": "UX/UI expert certified in AI project management, I design interfaces that hold up against model unpredictability — from discovery to production. I integrate automation and prompt engineering directly into my workflow.",
+    "bio": "After 19 years designing interfaces for complex products, I pivoted to AI Design in 2024 — not out of trend-chasing, but because agents fundamentally change the UX problem. I design systems that absorb model uncertainty and make it invisible to the user. From Design Systems to agent workflows, I work where design rigour meets LLM logic.",
+    "skillsLabel": "SKILLS & TOOLS",
+    "certsLabel": "RECENT CERTIFICATIONS",
     "cta": "Learn more about my background →"
   },
   "contact": {

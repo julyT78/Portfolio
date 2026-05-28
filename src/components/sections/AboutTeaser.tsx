@@ -31,7 +31,7 @@ export function AboutTeaser() {
               {t("bio")}
             </p>
             <Link
-              href="#contact"
+              href="/about"
               className="inline-flex items-center text-[16px] font-[480] text-ink hover:opacity-60 transition-opacity"
             >
               {t("cta")}
@@ -41,7 +41,7 @@ export function AboutTeaser() {
           {/* Compétences */}
           <div className="pt-4 md:pt-16">
             <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-ink/40 mb-6">
-              COMPÉTENCES & OUTILS
+              {t("skillsLabel")}
             </p>
             <div className="flex flex-wrap gap-2">
               {SKILLS.map((skill) => (
@@ -57,7 +57,7 @@ export function AboutTeaser() {
             {/* Certifications */}
             <div className="mt-12">
               <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-ink/40 mb-5">
-                CERTIFICATIONS RÉCENTES
+                {t("certsLabel")}
               </p>
               <ul className="space-y-3">
                 {[

@@ -57,7 +57,9 @@
   "about": {
     "eyebrow": "À PROPOS",
     "title": "19 ans de design, une spécialité IA",
-    "bio": "Experte UX/UI certifiée en gestion de projets IA, je conçois des interfaces qui tiennent face à l'imprévisibilité des modèles — de la phase discovery à la mise en production. J'intègre l'automatisation et le prompt engineering directement dans mon workflow.",
+    "bio": "Après 19 ans à concevoir des interfaces pour des produits complexes, j'ai pivoté vers l'IA Design en 2024 — non par effet de mode, mais parce que les agents changent la nature même du problème UX. Je conçois des systèmes qui absorbent l'incertitude des modèles et la rendent invisible pour l'utilisateur. Du Design System au workflow d'agents, je travaille là où la rigueur du design rencontre la logique des LLMs.",
+    "skillsLabel": "COMPÉTENCES & OUTILS",
+    "certsLabel": "CERTIFICATIONS RÉCENTES",
     "cta": "En savoir plus sur mon parcours →"
   },
   "contact": {
