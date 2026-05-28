@@ -24,12 +24,6 @@ const CAROUSEL_ITEMS = [
     context: "Direction artistique · 2025",
     image: "/images/carousel-editionYBC.png",
   },
-  {
-    id: "sharecare",
-    label: "UX Design Sharecare",
-    context: "IA & Santé · 2025",
-    image: "/images/carousel-sharecare.gif",
-  },
 ] as const;
 
 export function PresentationHero() {
@@ -59,7 +53,7 @@ export function PresentationHero() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-canvas min-h-[600px] md:min-h-[700px]">
+    <section className="relative overflow-hidden bg-canvas min-h-[480px] md:min-h-[560px]">
 
       {/* ── Background images (desktop only) ─────────────────────────────── */}
       <div className="absolute inset-0 z-0 hidden md:block" aria-hidden="true">
@@ -160,7 +154,7 @@ export function PresentationHero() {
 
       {/* ── Contenu texte ────────────────────────────────────────────────── */}
       <div className="relative z-[2] mx-auto max-w-[1280px] px-6 lg:px-8">
-        <div className="max-w-[520px] pt-20 pb-24 md:pt-28 md:pb-32">
+        <div className="max-w-[520px] pt-16 pb-20 md:pt-20 md:pb-24">
 
           {/* Eyebrow */}
           <p className="font-eyebrow text-ink/40 mb-8">
