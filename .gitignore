@@ -65,3 +65,4 @@ tsconfig.tsbuildinfo
 /*.jpeg
 /*.jpg
 .superpowers/
+.vercel
