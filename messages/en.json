@@ -69,6 +69,73 @@
     "cta": "Send a message",
     "linkedin": "LinkedIn"
   },
+  "aboutPage": {
+    "meta": {
+      "title": "Julie Tyrode — Background & AI Design Expertise",
+      "description": "19 years of Product Design, a deliberate pivot to AI in 2024. Discover Julie Tyrode's journey as AI Orchestrator & UX Designer."
+    },
+    "hero": {
+      "eyebrow": "AI ORCHESTRATOR & UX DESIGNER — PARIS",
+      "headline": "19 years of design. A pivot in 2024.",
+      "tagline": "I didn't discover AI in 2023 like everyone else. I waited until I understood what it actually changed about the UX problem.",
+      "ctaContact": "Get in touch",
+      "ctaProjects": "View my projects"
+    },
+    "pivot": {
+      "eyebrow": "THE PIVOT",
+      "title": "Why AI Design is a different craft.",
+      "body1": "For 19 years, I designed deterministic interfaces. We defined a state, a component, an interaction — and the system behaved exactly as specified.",
+      "body2": "In 2024, I started working with language models on real client projects. And I understood that the design problem had changed in nature: the interface must now absorb the uncertainty, latency, and errors of a system that reasons.",
+      "body3": "It's no longer a problem of state or flow — it's a problem of trust. How do you make an agent intelligible? How do you design waiting when the duration is unknown? How do you signal a hallucination without alarming the user?",
+      "body4": "That's what I build now: interfaces that make AI work for humans.",
+      "quote": "The orchestrator is the new designer.",
+      "quoteYear": "2024"
+    },
+    "timeline": {
+      "eyebrow": "BACKGROUND",
+      "title": "19 years of practice, a pivot in 2024",
+      "entry1Year": "2024–2026",
+      "entry1Role": "AI Orchestrator & UX Designer",
+      "entry1Company": "Softeam",
+      "entry1Desc": "Agentic interface design, AI workflows, AI Design System. Cross-functional AI initiative, AI Design Lab.",
+      "entry2Year": "2022–2024",
+      "entry2Role": "Senior Product Designer",
+      "entry2Company": "Softeam / La Poste",
+      "entry2Desc": "PULSE dashboard, Power BI tool. Implementation of a unified group Design System.",
+      "entry3Year": "2019–2022",
+      "entry3Role": "Product Designer",
+      "entry3Company": "Enterprise clients (retail, banking, energy)",
+      "entry3Desc": "UX/UI design for complex applications. Digital transformation support.",
+      "entry4Year": "2014–2019",
+      "entry4Role": "UX/UI Designer",
+      "entry4Company": "Digital agencies & ESN",
+      "entry4Desc": "Web application redesigns, design systems, discovery workshops and co-design.",
+      "entry5Year": "2007–2014",
+      "entry5Role": "Webdesigner & Frontend Developer",
+      "entry5Company": "Studio & Freelance",
+      "entry5Desc": "Graphic design, HTML/CSS integration, visual identity for SMBs and startups."
+    },
+    "skills": {
+      "eyebrow": "SKILLS & TOOLS",
+      "title": "An arsenal for the agent era",
+      "catDesign": "Design",
+      "catAI": "AI & Orchestration",
+      "catMethod": "Methods",
+      "certsLabel": "CERTIFICATIONS",
+      "cert1Year": "2026",
+      "cert1Label": "Ambassador \"AI Battle\"",
+      "cert1Org": "Sopra Steria Group",
+      "cert2Year": "2026",
+      "cert2Label": "Secnum — Digital Security",
+      "cert2Org": "ANSSI",
+      "cert3Year": "2025",
+      "cert3Label": "Gen AI for Future UX UI Design",
+      "cert3Org": "Coursera / Google",
+      "cert4Year": "2025",
+      "cert4Label": "Responsible Digital Project Manager",
+      "cert4Org": "Institut du Numérique Responsable"
+    }
+  },
   "footer": {
     "tagline": "Design for the AI era",
     "nav": "Navigation",

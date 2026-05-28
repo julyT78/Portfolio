@@ -69,6 +69,73 @@
     "cta": "Envoyer un message",
     "linkedin": "LinkedIn"
   },
+  "aboutPage": {
+    "meta": {
+      "title": "Julie Tyrode — Parcours & Expertise AI Design",
+      "description": "19 ans de Product Design, un pivot délibéré vers l'IA en 2024. Découvrez le parcours de Julie Tyrode, AI Orchestrator & UX Designer."
+    },
+    "hero": {
+      "eyebrow": "AI ORCHESTRATOR & UX DESIGNER — PARIS",
+      "headline": "19 ans de design. Un pivot en 2024.",
+      "tagline": "Je n'ai pas découvert l'IA en 2023 comme tout le monde. J'ai attendu de comprendre ce qu'elle changeait vraiment au problème UX avant de pivoter.",
+      "ctaContact": "Me contacter",
+      "ctaProjects": "Voir mes projets"
+    },
+    "pivot": {
+      "eyebrow": "LE PIVOT",
+      "title": "Pourquoi l'IA Design est un autre métier.",
+      "body1": "Pendant 19 ans, j'ai conçu des interfaces déterministes. On définissait un état, un composant, une interaction — et le système se comportait exactement comme prévu.",
+      "body2": "En 2024, j'ai commencé à travailler avec des modèles de langage sur des projets clients. Et j'ai compris que le problème de design avait changé de nature : l'interface doit désormais absorber l'incertitude, la latence, et les erreurs d'un système qui raisonne.",
+      "body3": "Ce n'est plus un problème d'état ou de flux — c'est un problème de confiance. Comment rendre un agent intelligible ? Comment concevoir l'attente quand la durée est inconnue ? Comment signaler une hallucination sans alarmer l'utilisateur ?",
+      "body4": "C'est ce que je construis maintenant : des interfaces qui font fonctionner l'IA pour les humains.",
+      "quote": "L'orchestrateur, c'est le nouveau designer.",
+      "quoteYear": "2024"
+    },
+    "timeline": {
+      "eyebrow": "PARCOURS",
+      "title": "19 ans de pratique, un pivot en 2024",
+      "entry1Year": "2024–2026",
+      "entry1Role": "AI Orchestrator & UX Designer",
+      "entry1Company": "Softeam",
+      "entry1Desc": "Conception d'interfaces agentiques, workflows IA, Design System IA. Chantier transverse IA, Laboratoire IA Design.",
+      "entry2Year": "2022–2024",
+      "entry2Role": "Senior Product Designer",
+      "entry2Company": "Softeam / La Poste",
+      "entry2Desc": "Dashboard PULSE, outil Power BI. Mise en place d'un Design System groupe unifié.",
+      "entry3Year": "2019–2022",
+      "entry3Role": "Product Designer",
+      "entry3Company": "Grands comptes (retail, banque, énergie)",
+      "entry3Desc": "Conception UX/UI pour applications complexes. Accompagnement transformation digitale.",
+      "entry4Year": "2014–2019",
+      "entry4Role": "UX/UI Designer",
+      "entry4Company": "Agences digitales & ESN",
+      "entry4Desc": "Refonte d'applications web, design systems, ateliers discovery et co-conception.",
+      "entry5Year": "2007–2014",
+      "entry5Role": "Webdesigner & Intégratrice",
+      "entry5Company": "Studio & Freelance",
+      "entry5Desc": "Conception graphique, intégration HTML/CSS, identité visuelle pour PME et startups."
+    },
+    "skills": {
+      "eyebrow": "COMPÉTENCES & OUTILS",
+      "title": "Un arsenal pour l'ère des agents",
+      "catDesign": "Design",
+      "catAI": "IA & Orchestration",
+      "catMethod": "Méthodes",
+      "certsLabel": "CERTIFICATIONS",
+      "cert1Year": "2026",
+      "cert1Label": "Ambassadrice \"Bataille de l'IA\"",
+      "cert1Org": "Sopra Steria Group",
+      "cert2Year": "2026",
+      "cert2Label": "Secnum — Sécurité numérique",
+      "cert2Org": "ANSSI",
+      "cert3Year": "2025",
+      "cert3Label": "Gen AI for Future UX UI Design",
+      "cert3Org": "Coursera / Google",
+      "cert4Year": "2025",
+      "cert4Label": "Chef de projet Numérique Responsable",
+      "cert4Org": "Institut du Numérique Responsable"
+    }
+  },
   "footer": {
     "tagline": "Design à l'ère de l'IA",
     "nav": "Navigation",
