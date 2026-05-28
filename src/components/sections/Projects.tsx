@@ -5,63 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useTranslations } from "next-intl";
-
-const PROJECTS = [
-  {
-    id: "pulse",
-    client: "Softeam",
-    year: "2026",
-    title: "Dashboard PULSE",
-    tagline: "Piloter l'IA pour fusionner design et code en temps réel",
-    tags: ["IA Design", "Vibe Coding", "POC"],
-    color: "bg-coral",
-    image: "/images/book/2.png",
-    href: "#projets",
-    kpi: { value: "-60%", label: "cycle design→code" },
-    deepDive: "Conception d'un pipeline IA-first : prompt engineering, génération de composants via Claude, validation design en temps réel. Enjeux : cohérence du design system face à la variabilité des outputs LLM, gestion des hallucinations visuelles, boucle feedback humain-machine.",
-  },
-  {
-    id: "labo-ia",
-    client: "Softeam",
-    year: "2025",
-    title: "Laboratoire d'expertise IA Design",
-    tagline: "Transformer l'IA en levier de valeur stratégique",
-    tags: ["IA Design", "Coaching", "R&D"],
-    color: "bg-lilac",
-    image: "/images/book/4.png",
-    href: "#projets",
-    kpi: { value: "+8", label: "designers formés" },
-    deepDive: "Programme de montée en compétences IA Design : ateliers prompt UX, cartographie des cas d'usage, définition de standards de qualité pour les outputs IA. Transfert de compétences sur les outils d'orchestration (n8n, Claude API) et les patterns d'interface agentique.",
-  },
-  {
-    id: "chantier-ia",
-    client: "Softeam",
-    year: "2025–2026",
-    title: "Chantier IA transverse",
-    tagline: "Accélérer l'adoption de l'IA, sans perdre confiance",
-    tags: ["IA Design", "Ateliers", "Design thinking"],
-    color: "bg-mint",
-    image: "/images/book/6.png",
-    href: "#projets",
-    // TODO — KPI à confirmer avec Julie
-    kpi: { value: "+6", label: "équipes embarquées" },
-    deepDive: "[À compléter — flux d'agents, gestion de la confiance utilisateur, arbres de décision de secours]",
-  },
-  {
-    id: "power-bi",
-    client: "La Poste",
-    year: "2026",
-    title: "Outil Power BI",
-    tagline: "UI pour données complexes alignée aux Design Systems groupe",
-    tags: ["UI Design", "Data viz", "Prototypes"],
-    color: "bg-cream",
-    image: "/images/book/8.png",
-    href: "#projets",
-    // TODO — KPI à confirmer avec Julie
-    kpi: { value: "1", label: "DS unifié groupe" },
-    deepDive: "[À compléter — analyse des jeux de données, gestion de la complexité visuelle, alignement Design System groupe]",
-  },
-];
+import { PROJECTS, type ProjectData } from "@/data/projects";
 
 export function Projects() {
   const t = useTranslations("projects");
@@ -76,7 +20,7 @@ export function Projects() {
           <h2 className="font-display-lg text-ink max-w-[18ch]">{t("title")}</h2>
         </div>
 
-        {/* Grille 2×2 */}
+        {/* Grille 2×N */}
         <div className="grid md:grid-cols-2 gap-6">
           {PROJECTS.map((project) => (
             <ProjectCard key={project.id} project={project} viewLabel={t("viewCase")} deepDiveLabel={t("deepDive")} />
@@ -92,7 +36,7 @@ function ProjectCard({
   viewLabel,
   deepDiveLabel,
 }: {
-  project: (typeof PROJECTS)[0];
+  project: ProjectData;
   viewLabel: string;
   deepDiveLabel: string;
 }) {

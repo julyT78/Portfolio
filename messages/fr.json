@@ -14,9 +14,9 @@
     "ctaSecondary": "Découvrir le Playground"
   },
   "presentationHero": {
-    "eyebrow": "AI ORCHESTRATOR & UX DESIGNER — PARIS",
-    "headline": "Je conçois des interfaces pour l'IA.",
-    "tagline": "L'orchestrateur, c'est le nouveau designer. Je conçois les workflows qui font raisonner les systèmes IA, de la cartographie des agents à l'interface qui les pilote.",
+    "eyebrow": "Julie TYRODE - Product & Agentic workflow designer",
+    "headline": "L'orchestrateur, c'est le nouveau designer.",
+    "tagline": "Je conçois les workflows qui font raisonner les systèmes IA, de la cartographie des agents à l'interface qui les pilote.",
     "ctaPrimary": "Voir mes projets →",
     "ctaSecondary": "Essayer le Playground →"
   },
@@ -135,6 +135,18 @@
       "cert4Label": "Chef de projet Numérique Responsable",
       "cert4Org": "Institut du Numérique Responsable"
     }
+  },
+  "caseStudy": {
+    "back": "Retour aux projets",
+    "context": "CONTEXTE",
+    "role": "RÔLE",
+    "duration": "DURÉE",
+    "approach": "DÉMARCHE",
+    "gallery": "VISUELS",
+    "results": "RÉSULTATS",
+    "prevProject": "Projet précédent",
+    "nextProject": "Projet suivant",
+    "backToProjects": "Tous les projets"
   },
   "footer": {
     "tagline": "Design à l'ère de l'IA",

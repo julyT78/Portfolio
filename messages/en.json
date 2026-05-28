@@ -136,6 +136,18 @@
       "cert4Org": "Institut du Numérique Responsable"
     }
   },
+  "caseStudy": {
+    "back": "Back to projects",
+    "context": "CONTEXT",
+    "role": "ROLE",
+    "duration": "DURATION",
+    "approach": "APPROACH",
+    "gallery": "VISUALS",
+    "results": "RESULTS",
+    "prevProject": "Previous project",
+    "nextProject": "Next project",
+    "backToProjects": "All projects"
+  },
   "footer": {
     "tagline": "Design for the AI era",
     "nav": "Navigation",
