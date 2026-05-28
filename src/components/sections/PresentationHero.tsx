@@ -10,19 +10,19 @@ const CAROUSEL_ITEMS = [
     id: "design-thinking",
     label: "Atelier Design Thinking",
     context: "UX Research · 2024",
-    image: "/images/carousel-design-thinking.webp",
+    image: "/images/carousel-numspotBG.png",
   },
   {
     id: "desk",
     label: "Environnement de création",
     context: "Product Design · 2024",
-    image: "/images/carousel-desk.webp",
+    image: "/images/carousel-desk.png",
   },
   {
     id: "edition-ybc",
     label: "Direction éditoriale YBC",
     context: "Direction artistique · 2025",
-    image: "/images/carousel-editionYBC.jpg",
+    image: "/images/carousel-editionYBC.png",
   },
   {
     id: "sharecare",
