@@ -58,7 +58,7 @@ export const PROJECTS: ProjectData[] = [
     tagline: "Piloter l'IA pour fusionner design et code en temps réel",
     tags: ["IA Design", "Vibe Coding", "POC"],
     color: "bg-coral",
-    image: "/images/projects/softeam/Pulse.jpg",
+    image: "/images/projects/softeam/Pulse-dashboard.svg",
     href: "/projects/pulse",
     kpi: { value: "-60%", label: "cycle design→code" },
     deepDive:
@@ -96,7 +96,7 @@ export const PROJECTS: ProjectData[] = [
       "Méthodologie reproductible documentée pour l'agence",
     ],
     gallery: [
-      "/images/projects/softeam/Pulse.jpg",
+      "/images/projects/softeam/Pulse-dashboard.svg",
       "/images/projects/softeam/Pulse2.png",
       "/images/projects/softeam/Pulse3.png",
       "/images/projects/softeam/Pulse4.png",
@@ -206,7 +206,7 @@ export const PROJECTS: ProjectData[] = [
     tagline: "Accélérer l'adoption de l'IA, sans perdre confiance",
     tags: ["IA Design", "Ateliers", "Design thinking"],
     color: "bg-mint",
-    image: "/images/projects/softeam/header-chantier-IA.png",
+    image: "/images/projects/softeam/dashboard-chantier-IA.png",
     href: "/projects/chantier-ia",
     kpi: { value: "+6", label: "équipes embarquées" },
     deepDive:
@@ -239,7 +239,7 @@ export const PROJECTS: ProjectData[] = [
       "Montée en compétence rapide et valorisation personnelle des profils",
     ],
     gallery: [
-      "/images/projects/softeam/header-chantier-IA.png",
+      "/images/projects/softeam/dashboard-chantier-IA.png",
       "/images/projects/softeam/visuel-chantier-IA.png",
     ],
   },
@@ -252,7 +252,7 @@ export const PROJECTS: ProjectData[] = [
     tagline: "UI pour données complexes alignée aux Design Systems groupe",
     tags: ["UI Design", "Data viz", "Prototypes"],
     color: "bg-cream",
-    image: "/images/projects/laposte/PBI.png",
+    image: "/images/projects/laposte/pbi-dashboard.png",
     href: "/projects/power-bi",
     kpi: { value: "-60%", label: "temps de création d'un rapport" },
     deepDive:
@@ -290,7 +290,7 @@ export const PROJECTS: ProjectData[] = [
       "Données chaudes visibles et actionnables dès l'ouverture du rapport",
     ],
     gallery: [
-      "/images/projects/laposte/PBI.png",
+      "/images/projects/laposte/pbi-dashboard.png",
       "/images/projects/laposte/pbi1.png",
       "/images/projects/laposte/pbi2.png",
       "/images/projects/laposte/pbi3.png",
