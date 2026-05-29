@@ -58,7 +58,7 @@ export const PROJECTS: ProjectData[] = [
     tagline: "Piloter l'IA pour fusionner design et code en temps réel",
     tags: ["IA Design", "Vibe Coding", "POC"],
     color: "bg-coral",
-    image: "/images/projects/softeam/Pulse.png",
+    image: "/images/projects/softeam/Pulse.jpg",
     href: "/projects/pulse",
     kpi: { value: "-60%", label: "cycle design→code" },
     deepDive:
@@ -96,7 +96,7 @@ export const PROJECTS: ProjectData[] = [
       "Méthodologie reproductible documentée pour l'agence",
     ],
     gallery: [
-      "/images/projects/softeam/Pulse.png",
+      "/images/projects/softeam/Pulse.jpg",
       "/images/projects/softeam/Pulse2.png",
       "/images/projects/softeam/Pulse3.png",
       "/images/projects/softeam/Pulse4.png",
