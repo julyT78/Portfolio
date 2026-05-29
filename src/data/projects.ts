@@ -4,6 +4,25 @@ export type ApproachStep = {
   body: string;
 };
 
+export type ChallengeEntry = {
+  flaw: string;
+  flawDetail: string;
+  solution: string;
+  solutionDetail: string;
+  image?: string;
+};
+
+export type DeepDiveSection = {
+  title: string;
+  body: string;
+};
+
+export type AgentFlowNode = {
+  node: string;
+  label: string;
+  type: "input" | "process" | "output" | "decision";
+};
+
 export type ProjectData = {
   // ── Homepage card fields ──────────────────────────────────────
   id: string;
@@ -24,6 +43,10 @@ export type ProjectData = {
   approach: ApproachStep[];
   results: string[];
   gallery?: string[];
+  // ── Double Vitesse fields ─────────────────────────────────────
+  challenges?: ChallengeEntry[];
+  deepDiveSections?: DeepDiveSection[];
+  agentFlow?: AgentFlowNode[];
 };
 
 export const PROJECTS: ProjectData[] = [
@@ -75,6 +98,46 @@ export const PROJECTS: ProjectData[] = [
     gallery: [
       "/images/projects/softeam/Pulse.jpg",
       "/images/projects/3.png",
+    ],
+    challenges: [
+      {
+        flaw: "Variabilité des outputs LLM",
+        flawDetail: "Claude génère des composants visuellement incohérents d'une itération à l'autre — même prompt, résultats différents. Le design system perd sa cohérence sans garde-fou.",
+        solution: "Boucle de validation design en temps réel",
+        solutionDetail: "Chaque composant généré passe par un cycle de revue immédiate : l'IA propose, le designer valide ou rejette avec un feedback court. La boucle s'auto-corrige sur 2 à 3 itérations.",
+      },
+      {
+        flaw: "Hallucinations visuelles",
+        flawDetail: "Le modèle invente des composants qui n'existent pas dans le design system, ou combine des tokens de façon sémantiquement incorrecte (couleur d'erreur sur un CTA de validation).",
+        solution: "Injection du design system en system prompt",
+        solutionDetail: "Les tokens de couleur, typographie et espacement sont injectés en contexte système. Claude ne peut plus inventer — il pioche uniquement dans le vocabulaire défini.",
+      },
+    ],
+    deepDiveSections: [
+      {
+        title: "Gestion de la confiance dans les outputs générés",
+        body: "La clé n'est pas d'empêcher les erreurs du modèle, mais de les rendre visibles et corrigeables. Chaque composant généré affiche son degré de correspondance avec le design system. En dessous d'un seuil (70%), une alerte visuelle demande une revue humaine avant intégration.",
+      },
+      {
+        title: "Architecture du pipeline IA-first",
+        body: "Le pipeline suit un schéma en trois temps : (1) le brief est structuré en contraintes formelles injectables, (2) Claude génère un composant JSX + sa justification, (3) une validation automatisée vérifie la conformité des tokens. La boucle humaine intervient uniquement à l'étape 3 pour les cas hors-seuil.",
+      },
+      {
+        title: "Gestion de la latence de génération",
+        body: "La génération d'un composant prend 3 à 8 secondes selon la complexité. L'interface affiche un skeleton progressif calqué sur la structure attendue du composant — pas un spinner générique. L'utilisateur voit la forme avant le contenu, ce qui ancre ses attentes et réduit la perception d'attente.",
+      },
+      {
+        title: "Parcours utilisateur probabiliste",
+        body: "Contrairement à un flux déterministe, le pipeline IA peut produire 3 chemins : succès direct (60%), succès après correction (35%), abandon et rebuild manuel (5%). Le design de l'interface anticipe ces trois cas avec des CTA adaptés à chaque état, sans imposer le chemin optimal.",
+      },
+    ],
+    agentFlow: [
+      { node: "ENTRÉE", label: "Brief design", type: "input" },
+      { node: "PROCESS", label: "Structuration en contraintes", type: "process" },
+      { node: "DÉCISION", label: "Ambiguité détectée ?", type: "decision" },
+      { node: "PROCESS", label: "Génération Claude", type: "process" },
+      { node: "PROCESS", label: "Validation tokens", type: "process" },
+      { node: "SORTIE", label: "Composant validé", type: "output" },
     ],
   },
 

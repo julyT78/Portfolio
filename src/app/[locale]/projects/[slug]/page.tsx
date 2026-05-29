@@ -5,7 +5,10 @@ import { PROJECTS, getProjectBySlug, getAdjacentProjects } from "@/data/projects
 import { CaseStudyHero } from "@/components/sections/case-study/CaseStudyHero";
 import { CaseStudyContext } from "@/components/sections/case-study/CaseStudyContext";
 import { CaseStudyApproach } from "@/components/sections/case-study/CaseStudyApproach";
+import { CaseStudyAgentFlow } from "@/components/sections/case-study/CaseStudyAgentFlow";
+import { CaseStudyChallengeModule } from "@/components/sections/case-study/CaseStudyChallengeModule";
 import { CaseStudyGallery } from "@/components/sections/case-study/CaseStudyGallery";
+import { CaseStudyDeepDive } from "@/components/sections/case-study/CaseStudyDeepDive";
 import { CaseStudyResults } from "@/components/sections/case-study/CaseStudyResults";
 import { CaseStudyNav } from "@/components/sections/case-study/CaseStudyNav";
 
@@ -58,9 +61,23 @@ export default async function CaseStudyPage({ params }: Props) {
         project={project}
         approachLabel={t("approach")}
       />
+      <CaseStudyAgentFlow
+        project={project}
+        agentFlowLabel={t("agentFlow")}
+      />
+      <CaseStudyChallengeModule
+        project={project}
+        challengeLabel={t("challenge")}
+        flawLabel={t("flawLabel")}
+        solutionLabel={t("solutionLabel")}
+      />
       <CaseStudyGallery
         project={project}
         galleryLabel={t("gallery")}
+      />
+      <CaseStudyDeepDive
+        project={project}
+        deepDiveLabel={t("deepDive")}
       />
       <CaseStudyResults
         project={project}

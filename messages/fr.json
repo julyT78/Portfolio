@@ -146,7 +146,12 @@
     "results": "RÉSULTATS",
     "prevProject": "Projet précédent",
     "nextProject": "Projet suivant",
-    "backToProjects": "Tous les projets"
+    "backToProjects": "Tous les projets",
+    "challenge": "CHALLENGE IA VS SOLUTION UX",
+    "flawLabel": "FAILLE IA IDENTIFIÉE",
+    "solutionLabel": "RÉPONSE UX CONÇUE",
+    "deepDive": "ANALYSE APPROFONDIE",
+    "agentFlow": "SCHÉMA DE FLUX D'AGENT"
   },
   "footer": {
     "tagline": "Design à l'ère de l'IA",

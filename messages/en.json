@@ -146,7 +146,12 @@
     "results": "RESULTS",
     "prevProject": "Previous project",
     "nextProject": "Next project",
-    "backToProjects": "All projects"
+    "backToProjects": "All projects",
+    "challenge": "AI CHALLENGE VS UX SOLUTION",
+    "flawLabel": "AI FLAW IDENTIFIED",
+    "solutionLabel": "DESIGNED UX RESPONSE",
+    "deepDive": "IN-DEPTH ANALYSIS",
+    "agentFlow": "AGENT FLOW DIAGRAM"
   },
   "footer": {
     "tagline": "Design for the AI era",
