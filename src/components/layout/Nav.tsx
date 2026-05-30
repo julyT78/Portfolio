@@ -1,14 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useState, useEffect } from "react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { usePathname } from "@/i18n/navigation";
 
 export function Nav() {
   const t = useTranslations("nav");
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const locale = useLocale();
+  const isHome = pathname === "/";
+  const sectionHref = (hash: string) => isHome ? `#${hash}` : `/${locale}/#${hash}`;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 4);
@@ -58,19 +63,19 @@ export function Nav() {
         {/* Nav desktop */}
         <nav className="hidden md:flex items-center gap-8" aria-label="Navigation principale">
           <Link
-            href="#projets"
+            href={sectionHref("projets")}
             className="text-[15px] font-[330] text-ink hover:opacity-60 transition-opacity"
           >
             {t("projects")}
           </Link>
           <Link
-            href="#about"
+            href={sectionHref("about")}
             className="text-[15px] font-[330] text-ink hover:opacity-60 transition-opacity"
           >
             {t("about")}
           </Link>
           <Link
-            href="#contact"
+            href={sectionHref("contact")}
             className="text-[15px] font-[330] text-ink hover:opacity-60 transition-opacity"
           >
             {t("contact")}
@@ -81,13 +86,13 @@ export function Nav() {
         <div className="hidden md:flex items-center gap-3">
           <LanguageSwitcher />
           <Link
-            href="#playground"
+            href={sectionHref("playground")}
             className="inline-flex items-center px-5 py-2 rounded-[50px] border border-hairline text-[15px] font-[480] text-ink hover:bg-surface transition-colors"
           >
             {t("ctaPlayground")}
           </Link>
           <Link
-            href="#contact"
+            href={sectionHref("contact")}
             className="inline-flex items-center px-5 py-2 rounded-[50px] bg-ink text-canvas text-[15px] font-[480] hover:opacity-85 transition-opacity"
           >
             {t("ctaPrimary")}
@@ -122,25 +127,25 @@ export function Nav() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden bg-canvas border-t border-hairline px-6 py-6 flex flex-col gap-6">
-          <Link href="#projets" onClick={() => setMenuOpen(false)} className="text-[18px] font-[330] text-ink">
+          <Link href={sectionHref("projets")} onClick={() => setMenuOpen(false)} className="text-[18px] font-[330] text-ink">
             {t("projects")}
           </Link>
-          <Link href="#about" onClick={() => setMenuOpen(false)} className="text-[18px] font-[330] text-ink">
+          <Link href={sectionHref("about")} onClick={() => setMenuOpen(false)} className="text-[18px] font-[330] text-ink">
             {t("about")}
           </Link>
-          <Link href="#contact" onClick={() => setMenuOpen(false)} className="text-[18px] font-[330] text-ink">
+          <Link href={sectionHref("contact")} onClick={() => setMenuOpen(false)} className="text-[18px] font-[330] text-ink">
             {t("contact")}
           </Link>
           <div className="flex flex-col gap-3 pt-2">
             <Link
-              href="#playground"
+              href={sectionHref("playground")}
               onClick={() => setMenuOpen(false)}
               className="flex justify-center px-5 py-3 rounded-[50px] border border-hairline text-[16px] font-[480] text-ink"
             >
               {t("ctaPlayground")}
             </Link>
             <Link
-              href="#contact"
+              href={sectionHref("contact")}
               onClick={() => setMenuOpen(false)}
               className="flex justify-center px-5 py-3 rounded-[50px] bg-ink text-canvas text-[16px] font-[480]"
             >
