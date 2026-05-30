@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Nav() {
   const t = useTranslations("nav");
@@ -78,6 +79,7 @@ export function Nav() {
 
         {/* CTAs desktop */}
         <div className="hidden md:flex items-center gap-3">
+          <LanguageSwitcher />
           <Link
             href="#playground"
             className="inline-flex items-center px-5 py-2 rounded-[50px] border border-hairline text-[15px] font-[480] text-ink hover:bg-surface transition-colors"
@@ -144,6 +146,9 @@ export function Nav() {
             >
               {t("ctaPrimary")}
             </Link>
+          </div>
+          <div className="pt-2 border-t border-hairline">
+            <LanguageSwitcher />
           </div>
         </div>
       )}

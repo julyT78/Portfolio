@@ -1,20 +1,30 @@
 import { useTranslations } from "next-intl";
 
 const SKILLS = {
-  design:   ["Figma", "Design System", "Prototypage", "Design Tokens", "Accessibilité", "Green IT"],
-  ai:       ["Claude API", "N8N", "Prompt Engineering", "Vibe Coding", "LLM UX", "Agent Workflows"],
-  methods:  ["Discovery UX", "Ateliers co-conception", "User Research", "Design Thinking", "Lean UX"],
+  fr: {
+    design:  ["Figma", "Design System", "Prototypage", "Design Tokens", "Accessibilité", "Green IT"],
+    ai:      ["Claude API", "N8N", "Prompt Engineering", "Vibe Coding", "LLM UX", "Agent Workflows"],
+    methods: ["Discovery UX", "Ateliers co-conception", "User Research", "Design Thinking", "Lean UX"],
+  },
+  en: {
+    design:  ["Figma", "Design System", "Prototyping", "Design Tokens", "Accessibility", "Green IT"],
+    ai:      ["Claude API", "N8N", "Prompt Engineering", "Vibe Coding", "LLM UX", "Agent Workflows"],
+    methods: ["Discovery UX", "Co-design workshops", "User Research", "Design Thinking", "Lean UX"],
+  },
 } as const;
 
 const CERTS = [1, 2, 3, 4] as const;
 
-export function AboutSkills() {
+type Props = { locale: string };
+
+export function AboutSkills({ locale }: Props) {
   const t = useTranslations("aboutPage.skills");
+  const skills = SKILLS[locale as "fr" | "en"] ?? SKILLS.fr;
 
   const categories = [
-    { key: "design" as const,   label: t("catDesign"),   skills: SKILLS.design },
-    { key: "ai" as const,       label: t("catAI"),       skills: SKILLS.ai },
-    { key: "methods" as const,  label: t("catMethod"),   skills: SKILLS.methods },
+    { key: "design",  label: t("catDesign"),  items: skills.design },
+    { key: "ai",      label: t("catAI"),      items: skills.ai },
+    { key: "methods", label: t("catMethod"),  items: skills.methods },
   ];
 
   return (
@@ -29,13 +39,13 @@ export function AboutSkills() {
 
         {/* Grille compétences par catégorie */}
         <div className="grid md:grid-cols-3 gap-10 mb-16">
-          {categories.map(({ key, label, skills }) => (
+          {categories.map(({ key, label, items }) => (
             <div key={key}>
               <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-ink/40 mb-5">
                 {label}
               </p>
               <div className="flex flex-wrap gap-2">
-                {skills.map((skill) => (
+                {items.map((skill) => (
                   <span
                     key={skill}
                     className="px-4 py-2 rounded-[50px] border border-hairline bg-canvas text-ink text-[14px] font-[480] tracking-[0.01em] hover:bg-surface transition-colors"

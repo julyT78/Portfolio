@@ -20,13 +20,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function AboutPage() {
+export default async function AboutPage({ params }: Props) {
+  const { locale } = await params;
   return (
     <>
       <AboutPageHero />
       <AboutPivot />
       <AboutTimeline />
-      <AboutSkills />
+      <AboutSkills locale={locale} />
       <ContactCTA />
     </>
   );

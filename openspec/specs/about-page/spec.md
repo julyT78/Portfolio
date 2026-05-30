@@ -1,6 +1,7 @@
 # Spec: about-page
 
 <!-- synced from change: page-about — 2026-05-28 -->
+<!-- synced from change: language-switcher — 2026-05-30 -->
 
 ### Requirement: Page /about accessible et indexable
 La route `/[locale]/about` SHALL exister et retourner un statut HTTP 200 pour les locales `fr` et `en`.
@@ -98,7 +99,7 @@ La page SHALL être utilisable sur mobile (375px), tablette (768px) et desktop (
 ---
 
 ### Requirement: Couverture i18n complète
-Toutes les chaînes de la page SHALL être externalisées dans `fr.json` et `en.json` sous le namespace `aboutPage`.
+Toutes les chaînes de la page SHALL être externalisées dans `fr.json` et `en.json` sous le namespace `aboutPage`, y compris les chaînes utilisées dans les composants `AboutPageHero`, `AboutPivot`, `AboutTimeline` et `AboutSkills`.
 
 #### Scenario: Aucune chaîne hardcodée en français
 - **WHEN** la page est servie en locale `en`
@@ -107,3 +108,7 @@ Toutes les chaînes de la page SHALL être externalisées dans `fr.json` et `en.
 #### Scenario: Aucune chaîne hardcodée en anglais
 - **WHEN** la page est servie en locale `fr`
 - **THEN** tous les textes affichés sont en français (aucune chaîne en anglais n'apparaît)
+
+#### Scenario: Basculement depuis le LanguageSwitcher sur /about
+- **WHEN** l'utilisateur est sur `/fr/about` et clique sur "EN" dans le LanguageSwitcher
+- **THEN** la page `/en/about` affiche tous ses textes en anglais sans clé manquante (aucune clé brute `aboutPage.*` visible)
