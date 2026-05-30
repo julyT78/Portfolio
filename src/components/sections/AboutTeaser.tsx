@@ -61,6 +61,7 @@ export function AboutTeaser() {
               </p>
               <ul className="space-y-3">
                 {[
+                  { year: "2026", label: "Claude AI Certification — Anthropic" },
                   { year: "2026", label: 'Ambassadrice "Bataille de l\'IA"' },
                   { year: "2026", label: "Secnum ANSSI" },
                   { year: "2025", label: "Gen AI for futur UX UI Design" },
