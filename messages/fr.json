@@ -133,7 +133,10 @@
       "cert3Org": "Coursera / Google",
       "cert4Year": "2025",
       "cert4Label": "Chef de projet Numérique Responsable",
-      "cert4Org": "Institut du Numérique Responsable"
+      "cert4Org": "Institut du Numérique Responsable",
+      "cert5Year": "2026",
+      "cert5Label": "Claude AI Certification",
+      "cert5Org": "Anthropic"
     }
   },
   "caseStudy": {
