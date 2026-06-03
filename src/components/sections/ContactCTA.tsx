@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 export function ContactCTA() {
@@ -24,12 +23,12 @@ export function ContactCTA() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link
+            <a
               href="mailto:julie.tyrode@gmail.com"
               className="inline-flex items-center justify-center px-7 py-3 rounded-[50px] bg-canvas text-ink text-[17px] font-[480] tracking-[-0.01em] hover:opacity-90 transition-opacity"
             >
               {t("cta")}
-            </Link>
+            </a>
             <a
               href="https://www.linkedin.com/in/julie-t-542a6215/"
               target="_blank"
