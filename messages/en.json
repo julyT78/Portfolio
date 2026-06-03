@@ -67,7 +67,25 @@
     "title": "An AI project in mind?",
     "subtitle": "Freelance · Full-time · Consulting — AI Design focused",
     "cta": "Send a message",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "form": {
+      "nom": "Last name",
+      "prenom": "First name",
+      "email": "Email",
+      "message": "Message",
+      "nomPlaceholder": "Your last name",
+      "prenomPlaceholder": "Your first name",
+      "emailPlaceholder": "your@email.com",
+      "messagePlaceholder": "Describe your project or need...",
+      "submit": "Send",
+      "submitting": "Sending...",
+      "successTitle": "Message sent!",
+      "successBody": "Thank you for your message. I will get back to you as soon as possible.",
+      "errorGeneric": "Something went wrong. Please try again.",
+      "retry": "Try again",
+      "requiredField": "This field is required.",
+      "invalidEmail": "Invalid email address."
+    }
   },
   "aboutPage": {
     "meta": {

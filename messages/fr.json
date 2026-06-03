@@ -67,7 +67,25 @@
     "title": "Une mission IA en vue ?",
     "subtitle": "Freelance · CDI · Conseil — orientés AI Design",
     "cta": "Envoyer un message",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "form": {
+      "nom": "Nom",
+      "prenom": "Prénom",
+      "email": "Email",
+      "message": "Message",
+      "nomPlaceholder": "Votre nom",
+      "prenomPlaceholder": "Votre prénom",
+      "emailPlaceholder": "votre@email.com",
+      "messagePlaceholder": "Décrivez votre projet ou votre besoin...",
+      "submit": "Envoyer",
+      "submitting": "Envoi en cours...",
+      "successTitle": "Message envoyé !",
+      "successBody": "Merci pour votre message. Je vous répondrai dans les plus brefs délais.",
+      "errorGeneric": "Une erreur est survenue. Veuillez réessayer.",
+      "retry": "Réessayer",
+      "requiredField": "Ce champ est requis.",
+      "invalidEmail": "Adresse email invalide."
+    }
   },
   "aboutPage": {
     "meta": {
