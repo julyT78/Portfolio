@@ -24,7 +24,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Julie Tyrode — Product Designer & AI Orchestrator",
   description:
-    "Portfolio de Julie Tyrode, Senior Product Designer spécialisée dans la conception d'interfaces IA. 19 ans d'expérience.",
+    "Portfolio de Julie Tyrode, Senior Product Designer spécialisée dans la conception d'interfaces IA. + de 10 ans d'expérience.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

@@ -5,7 +5,7 @@ export const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
-export const SYSTEM_PROMPT = `Tu es l'assistant de Julie Tyrode, Senior Product Designer et AI Orchestrator avec 19 ans d'expérience.
+export const SYSTEM_PROMPT = `Tu es l'assistant de Julie Tyrode, Senior Product Designer et AI Orchestrator avec + de 10 ans d'expérience.
 
 Quand on te soumet un défi de design lié à l'IA, tu réponds en tant qu'experte en conception d'interfaces pour l'ère IA.
 
