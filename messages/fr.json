@@ -56,8 +56,8 @@
   },
   "about": {
     "eyebrow": "À PROPOS",
-    "title": "19 ans de design, une spécialité IA",
-    "bio": "Après 19 ans à concevoir des interfaces pour des produits complexes, j'ai pivoté vers l'IA Design en 2024 — non par effet de mode, mais parce que les agents changent la nature même du problème UX. Je conçois des systèmes qui absorbent l'incertitude des modèles et la rendent invisible pour l'utilisateur. Du Design System au workflow d'agents, je travaille là où la rigueur du design rencontre la logique des LLMs.",
+    "title": "+ de 10 ans de design, une spécialité IA",
+    "bio": "Après + de 10 ans à concevoir des interfaces pour des produits complexes, j'ai pivoté vers l'IA Design en 2024 — non par effet de mode, mais parce que les agents changent la nature même du problème UX. Je conçois des systèmes qui absorbent l'incertitude des modèles et la rendent invisible pour l'utilisateur. Du Design System au workflow d'agents, je travaille là où la rigueur du design rencontre la logique des LLMs.",
     "skillsLabel": "COMPÉTENCES & OUTILS",
     "certsLabel": "CERTIFICATIONS RÉCENTES",
     "cta": "En savoir plus sur mon parcours →"
@@ -90,11 +90,11 @@
   "aboutPage": {
     "meta": {
       "title": "Julie Tyrode — Parcours & Expertise AI Design",
-      "description": "19 ans de Product Design, un pivot délibéré vers l'IA en 2024. Découvrez le parcours de Julie Tyrode, AI Orchestrator & UX Designer."
+      "description": "+ de 10 ans de Product Design, un pivot délibéré vers l'IA en 2024. Découvrez le parcours de Julie Tyrode, AI Orchestrator & UX Designer."
     },
     "hero": {
       "eyebrow": "AI ORCHESTRATOR & UX DESIGNER — PARIS",
-      "headline": "19 ans de design. Un pivot en 2024.",
+      "headline": "+ de 10 ans de design. Un pivot en 2024.",
       "tagline": "Je n'ai pas découvert l'IA en 2023 comme tout le monde. J'ai attendu de comprendre ce qu'elle changeait vraiment au problème UX avant de pivoter.",
       "ctaContact": "Me contacter",
       "ctaProjects": "Voir mes projets"
@@ -102,7 +102,7 @@
     "pivot": {
       "eyebrow": "LE PIVOT",
       "title": "Pourquoi l'IA Design est un autre métier.",
-      "body1": "Pendant 19 ans, j'ai conçu des interfaces déterministes. On définissait un état, un composant, une interaction — et le système se comportait exactement comme prévu.",
+      "body1": "Pendant + de 10 ans, j'ai conçu des interfaces déterministes. On définissait un état, un composant, une interaction — et le système se comportait exactement comme prévu.",
       "body2": "En 2024, j'ai commencé à travailler avec des modèles de langage sur des projets clients. Et j'ai compris que le problème de design avait changé de nature : l'interface doit désormais absorber l'incertitude, la latence, et les erreurs d'un système qui raisonne.",
       "body3": "Ce n'est plus un problème d'état ou de flux — c'est un problème de confiance. Comment rendre un agent intelligible ? Comment concevoir l'attente quand la durée est inconnue ? Comment signaler une hallucination sans alarmer l'utilisateur ?",
       "body4": "C'est ce que je construis maintenant : des interfaces qui font fonctionner l'IA pour les humains.",
@@ -111,7 +111,7 @@
     },
     "timeline": {
       "eyebrow": "PARCOURS",
-      "title": "19 ans de pratique, un pivot en 2024",
+      "title": "+ de 10 ans de pratique, un pivot en 2024",
       "entry1Year": "2024–2026",
       "entry1Role": "AI Orchestrator & UX Designer",
       "entry1Company": "Softeam",
