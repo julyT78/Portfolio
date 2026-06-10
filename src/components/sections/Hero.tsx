@@ -44,7 +44,7 @@ export function Hero() {
         {/* Metrics discrètes */}
         <div className="mt-20 pt-8 border-t border-hairline grid grid-cols-2 md:grid-cols-3 gap-8 max-w-[640px]">
           {[
-            { value: "19", label: "ans d'expérience" },
+            { value: "+ de 10", label: "ans d'expérience" },
             { value: "8+", label: "clients grands comptes" },
             { value: "IA", label: "spécialité depuis 2024" },
           ].map(({ value, label }) => (

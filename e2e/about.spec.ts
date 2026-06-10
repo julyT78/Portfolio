@@ -26,7 +26,7 @@ test("About EN : 200 + h1 en anglais", async ({ page }) => {
   // Le contenu doit être en anglais (pas de caractères typiquement français)
   const text = await h1.textContent();
   expect(text).toBeTruthy();
-  // La clé en.json est "19 years of design. A pivot in 2024."
+  // La clé en.json est "10+ years of design. A pivot in 2024."
   expect(text).toMatch(/years|design/i);
 });
 

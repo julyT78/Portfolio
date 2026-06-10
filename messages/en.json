@@ -7,7 +7,7 @@
     "ctaPlayground": "Playground ↓"
   },
   "hero": {
-    "eyebrow": "PRODUCT DESIGNER · AI ORCHESTRATOR · 19 YEARS",
+    "eyebrow": "PRODUCT DESIGNER · AI ORCHESTRATOR · 10+ YEARS",
     "headline": "I design interfaces for the AI era",
     "tagline": "Designing for AI means absorbing friction, latency and the unpredictable — and turning them into reliable experiences.",
     "ctaPrimary": "View my projects →",
@@ -21,10 +21,10 @@
     "ctaSecondary": "Try the Playground →"
   },
   "pitchPlayground": {
-    "eyebrow": "19 YEARS · DESIGN SYSTEM · AI SINCE 2024",
+    "eyebrow": "10+ YEARS · DESIGN SYSTEM · AI SINCE 2024",
     "title": "Designing for AI is a different craft.",
     "body": "AI interfaces don't respond — they reason, hesitate, err and self-correct. Designing for them means architecting uncertainty as much as screens.",
-    "metric1Value": "19",
+    "metric1Value": "10+",
     "metric1Label": "years experience",
     "metric2Value": "8+",
     "metric2Label": "enterprise clients",
@@ -56,8 +56,8 @@
   },
   "about": {
     "eyebrow": "ABOUT",
-    "title": "19 years of design, an AI speciality",
-    "bio": "After 19 years designing interfaces for complex products, I pivoted to AI Design in 2024 — not out of trend-chasing, but because agents fundamentally change the UX problem. I design systems that absorb model uncertainty and make it invisible to the user. From Design Systems to agent workflows, I work where design rigour meets LLM logic.",
+    "title": "10+ years of design, an AI speciality",
+    "bio": "After 10+ years designing interfaces for complex products, I pivoted to AI Design in 2024 — not out of trend-chasing, but because agents fundamentally change the UX problem. I design systems that absorb model uncertainty and make it invisible to the user. From Design Systems to agent workflows, I work where design rigour meets LLM logic.",
     "skillsLabel": "SKILLS & TOOLS",
     "certsLabel": "RECENT CERTIFICATIONS",
     "cta": "Learn more about my background →"
@@ -90,11 +90,11 @@
   "aboutPage": {
     "meta": {
       "title": "Julie Tyrode — Background & AI Design Expertise",
-      "description": "19 years of Product Design, a deliberate pivot to AI in 2024. Discover Julie Tyrode's journey as AI Orchestrator & UX Designer."
+      "description": "10+ years of Product Design, a deliberate pivot to AI in 2024. Discover Julie Tyrode's journey as AI Orchestrator & UX Designer."
     },
     "hero": {
       "eyebrow": "AI ORCHESTRATOR & UX DESIGNER — PARIS",
-      "headline": "19 years of design. A pivot in 2024.",
+      "headline": "10+ years of design. A pivot in 2024.",
       "tagline": "I didn't discover AI in 2023 like everyone else. I waited until I understood what it actually changed about the UX problem.",
       "ctaContact": "Get in touch",
       "ctaProjects": "View my projects"
@@ -102,7 +102,7 @@
     "pivot": {
       "eyebrow": "THE PIVOT",
       "title": "Why AI Design is a different craft.",
-      "body1": "For 19 years, I designed deterministic interfaces. We defined a state, a component, an interaction — and the system behaved exactly as specified.",
+      "body1": "For 10+ years, I designed deterministic interfaces. We defined a state, a component, an interaction — and the system behaved exactly as specified.",
       "body2": "In 2024, I started working with language models on real client projects. And I understood that the design problem had changed in nature: the interface must now absorb the uncertainty, latency, and errors of a system that reasons.",
       "body3": "It's no longer a problem of state or flow — it's a problem of trust. How do you make an agent intelligible? How do you design waiting when the duration is unknown? How do you signal a hallucination without alarming the user?",
       "body4": "That's what I build now: interfaces that make AI work for humans.",
@@ -111,7 +111,7 @@
     },
     "timeline": {
       "eyebrow": "BACKGROUND",
-      "title": "19 years of practice, a pivot in 2024",
+      "title": "10+ years of practice, a pivot in 2024",
       "entry1Year": "2024–2026",
       "entry1Role": "AI Orchestrator & UX Designer",
       "entry1Company": "Softeam",
