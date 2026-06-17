@@ -51,6 +51,51 @@ export type ProjectData = {
 
 export const PROJECTS: ProjectData[] = [
   {
+    id: "sacem",
+    client: "SACEM",
+    year: "2026",
+    title: "Refonte outil CENSO",
+    tagline: "Repenser la déclaration de séances musicales pour 3 profils fédération",
+    tags: ["RGAA A1", "IA agent", "UX Research"],
+    color: "bg-lilac",
+    image: "/images/projects/sacem/ecran_sacem.png",
+    href: "/projects/sacem",
+    kpi: { value: "106", label: "critères RGAA audités par IA" },
+    deepDive:
+      "Conception d'un agent IA dédié à l'audit RGAA A1 : analyse automatique des interfaces, contrôle des 106 critères obligatoires, génération de rapports structurés. En parallèle, cartographie complète des parcours sur 3 profils (Adhérent fédération, Administrateur fédération, Administrateur SACEM), prototype haute fidélité et framework IA qualité produit intégré dès la conception.",
+    context:
+      "CENSO est une plateforme de déclaration de séances musicales exploitée en marque blanche par plusieurs fédérations partenaires de la SACEM. L'outil présentait plusieurs limites : absence de tunnel de paiement structuré, parcours utilisateur fragmenté entre fédérations, forte complexité métier, contraintes réglementaires d'accessibilité non couvertes et multiplication des usages selon les profils. L'objectif : repenser l'expérience de bout en bout tout en préparant l'intégration de l'IA générative dans les processus métier.",
+    role: "Product Builder & UX Designer — IA agent, RGAA A1, Prototype haute fidélité",
+    duration: "Avril 2026 — en cours",
+    approach: [
+      {
+        step: "1",
+        title: "Audit RGAA automatisé par IA",
+        body: "Conception d'un agent IA dédié à l'audit RGAA A1 : analyse automatique des interfaces développées, contrôle des 106 critères obligatoires, détection des non-conformités et génération d'un rapport d'audit structuré. Base de connaissances experte (RGAA.md, Design.md, composants, règles de validation) utilisée par l'agent.",
+      },
+      {
+        step: "2",
+        title: "Recherche UX & cartographie des parcours",
+        body: "Identification des principaux irritants : compréhension des montants calculés, lecture des données sensibles, parcours fragmentés entre fédérations. Cartographie complète des parcours, workflow des 3 personas (Adhérent fédération, Administrateur fédération, Administrateur SACEM), User Journeys détaillés.",
+      },
+      {
+        step: "3",
+        title: "Prototype haute fidélité & recommandations",
+        body: "Prototype haute fidélité couvrant les parcours harmonisés entre fédérations. Recommandations UX priorisées et framework IA dédié à l'accessibilité et à la qualité produit, intégré dès la phase de conception pour garantir la conformité RGAA A1.",
+      },
+    ],
+    results: [
+      "Simplification des parcours entre fédérations partenaires",
+      "Clarification des points de décision et des montants calculés",
+      "Réduction de la charge cognitive sur les 3 profils utilisateurs",
+      "Meilleure lisibilité des informations métier et conformité RGAA A1 préparée",
+    ],
+    gallery: [
+      "/images/projects/sacem/ecran_sacem.png",
+    ],
+  },
+
+  {
     id: "pulse",
     client: "Softeam",
     year: "2026",
@@ -405,6 +450,7 @@ export const PROJECTS: ProjectData[] = [
       "/images/projects/societe-generale/S&E Investigation - Alert PAGE.png",
     ],
   },
+
 ];
 
 /** Trouve un projet par son slug (= id) */

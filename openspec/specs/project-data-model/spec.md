@@ -1,6 +1,7 @@
 # Spec: project-data-model
 
 <!-- synced from change: case-study-pages — 2026-05-28 -->
+<!-- synced from change: add-project-sacem — 2026-06-17 -->
 
 ### Requirement: Source de données projets centralisée
 Un fichier `src/data/projects.ts` SHALL exister et exporter un tableau typé `PROJECTS` contenant toutes les données des projets utilisées à la fois par la homepage et les pages case study.
@@ -38,3 +39,16 @@ Chaque projet SHALL avoir un `id` unique en kebab-case servant de slug URL (`/pr
 #### Scenario: Slugs sans caractères spéciaux
 - **WHEN** on consulte les ids des projets
 - **THEN** tous les ids sont en kebab-case ASCII (pas d'accents, pas d'espaces)
+
+---
+
+### Requirement: Slug "sacem" présent et unique dans PROJECTS
+Le tableau `PROJECTS` SHALL contenir exactement un objet avec `id: "sacem"`, en kebab-case ASCII, sans doublon.
+
+#### Scenario: Unicité du slug sacem
+- **WHEN** on filtre le tableau PROJECTS sur `id === "sacem"`
+- **THEN** exactement un résultat est retourné
+
+#### Scenario: TypeScript accepte l'entrée Sacem sans erreur
+- **WHEN** TypeScript compile le projet (`tsc --noEmit`)
+- **THEN** aucune erreur de type n'est levée pour l'objet Sacem dans PROJECTS
