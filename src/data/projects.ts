@@ -458,17 +458,17 @@ export const PROJECTS: ProjectData[] = [
     id: "multi-agents-studio",
     client: "Docaposte (La Poste)",
     year: "2026",
-    title: "GETUP Forward — Multi-Agents Studio",
+    title: "Multi-Agents Studio",
     tagline: "Rendre l'IA apprenable, praticable et gouvernée pour toute l'entreprise",
     tags: ["IA Design", "Multi-agents", "Gouvernance IA"],
     color: "bg-mint",
-    image: "/images/projects/multi-agents-studio/getup-forward-dashboard.png",
+    image: "/images/projects/multi-agents-studio/multi-agents-studio-cover.svg",
     href: "/projects/multi-agents-studio",
     kpi: { value: "24", label: "agents IA orchestrés en 1 commande" },
     deepDive:
       "Conception d'une plateforme de formation IA à 4 pôles complémentaires (Formation, Studio IA, Assets, Gouvernance) ET du framework technique qui la sous-tend : Multi-Agent Studio, un Squad Enablement Kit générant 24 agents spécialisés (1 coordinateur, 18 workers, 5 guardians) à partir d'une configuration YAML projet en une seule commande. Ce même framework a orchestré la refonte CENSO/SACEM présentée ailleurs dans ce portfolio.",
     context:
-      "Chez Docaposte, filiale du groupe La Poste, l'adoption de l'IA générative progresse vite mais de façon inégale : enthousiasme, pression et doutes se mélangent selon les profils. Connaître l'IA ne garantit pas son usage utile au quotidien, et sans espace commun, pratiques et outils se dispersent, fragilisant qualité et gouvernance. L'objectif : une plateforme GETUP Forward structurée en 4 pôles continus — Apprendre (Formation), Expérimenter (Studio IA), Produire (Assets), Partager (Gouvernance) — et un framework d'orchestration multi-agents prêt à l'emploi pour les équipes techniques.",
+      "Chez Docaposte, filiale du groupe La Poste, l'adoption de l'IA générative progresse vite mais de façon inégale : enthousiasme, pression et doutes se mélangent selon les profils. Connaître l'IA ne garantit pas son usage utile au quotidien, et sans espace commun, pratiques et outils se dispersent, fragilisant qualité et gouvernance. L'objectif : une plateforme Multi-Agents Studio structurée en 4 pôles continus — Apprendre (Formation), Expérimenter (Studio IA), Produire (Assets), Partager (Gouvernance) — et un framework d'orchestration multi-agents prêt à l'emploi pour les équipes techniques.",
     role: "Product Design & Orchestration IA — UX Research, Design System, Framework multi-agents",
     duration: "Mars 2026 — en cours",
     approach: [
@@ -480,7 +480,7 @@ export const PROJECTS: ProjectData[] = [
       {
         step: "2",
         title: "Parcours utilisateur « De la découverte à la contribution »",
-        body: "Conception du parcours GETUP Forward : déclaration du profil (rôle, niveau, contexte) à l'inscription, progression adaptée plutôt qu'un contenu unique pour tous, exercices ancrés dans des situations métier, puis accès aux actifs IA validés et contribution progressive au patrimoine collectif.",
+        body: "Conception du parcours Multi-Agents Studio : déclaration du profil (rôle, niveau, contexte) à l'inscription, progression adaptée plutôt qu'un contenu unique pour tous, exercices ancrés dans des situations métier, puis accès aux actifs IA validés et contribution progressive au patrimoine collectif.",
       },
       {
         step: "3",
@@ -500,8 +500,8 @@ export const PROJECTS: ProjectData[] = [
       "Plan de passage à l'échelle structuré : gouvernance, sécurité et équipe pluridisciplinaire dédiée validés pour la suite",
     ],
     gallery: [
-      "/images/projects/multi-agents-studio/getup-forward-dashboard.png",
-      "/images/projects/multi-agents-studio/getup-forward-niveau-1.png",
+      "/images/projects/multi-agents-studio/multi-agents-studio-dashboard.png",
+      "/images/projects/multi-agents-studio/multi-agents-studio-niveau-1.png",
       "/images/projects/multi-agents-studio/multi-agent-studio-hero.png",
       "/images/projects/multi-agents-studio/multi-agent-studio-catalogue-agents.png",
       "/images/projects/multi-agents-studio/multi-agent-studio-playbook-censo.png",
