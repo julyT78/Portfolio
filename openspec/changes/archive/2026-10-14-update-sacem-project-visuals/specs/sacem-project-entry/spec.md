@@ -60,3 +60,10 @@ Les visuels sélectionnés SHALL être présents dans `public/images/projects/sa
 #### Scenario: Aucune donnée personnelle lisible
 - **WHEN** on inspecte les visuels publiés qui montrent des fiches adhérent
 - **THEN** les noms de personnes physiques, adresses e-mail et numéros de téléphone sont floutés et illisibles, tandis que les noms d'associations et les données métier restent lisibles
+
+## REMOVED Requirements
+
+### Requirement: Asset ecran_sacem.png copié dans public
+**Reason**: Le visuel a été retiré de la galerie Sacem, sa mise en situation faisant doublon avec la nouvelle couverture `censo-cover.png`, et son écran datant d'un état antérieur du produit. Le fichier publié a été supprimé.
+
+**Migration**: Aucune action requise côté code. La requirement « Assets CENSO publiés dans public » couvre désormais les visuels effectivement servis. La source reste archivée dans `assets/Projets/Sacem/ecran_sacem.png` si le visuel devait être réintroduit.

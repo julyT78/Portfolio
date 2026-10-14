@@ -3,6 +3,7 @@
 <!-- synced from change: project-case-study-page — 2026-05-29 -->
 <!-- synced from change: add-project-sacem — 2026-06-17 -->
 <!-- synced from change: add-project-multi-agents-studio — 2026-10-14 -->
+<!-- synced from change: update-sacem-project-visuals — 2026-10-14 -->
 
 ### Requirement: Route case study accessible et pré-rendue
 La route `/[locale]/projects/[slug]` SHALL exister pour chaque slug de projet défini dans `src/data/projects.ts` et retourner HTTP 200. Les pages SHALL être générées statiquement via `generateStaticParams`.
@@ -132,9 +133,9 @@ La page case study Sacem SHALL afficher le contexte CENSO, la démarche UX en é
 - **WHEN** la page case study Sacem se charge
 - **THEN** les étapes de la démarche (audit IA, base de connaissances, recherche UX) sont affichées dans l'ordre
 
-#### Scenario: Image ecran_sacem.png affichée
+#### Scenario: Visuels de la galerie CENSO affichés
 - **WHEN** la page case study Sacem se charge
-- **THEN** l'image `/images/projects/sacem/ecran_sacem.png` est visible sans erreur 404
+- **THEN** les visuels listés dans le champ `gallery` de l'entrée Sacem sont visibles sans erreur 404
 
 ---
 
@@ -178,3 +179,20 @@ La page case study Multi-Agents Studio SHALL afficher les composants `CaseStudyA
 #### Scenario: Module défis visible
 - **WHEN** la page case study Multi-Agents Studio se charge
 - **THEN** le composant `CaseStudyChallengeModule` affiche les couples flaw/solution issus des tests utilisateurs
+
+---
+
+### Requirement: Mise en page uniforme de la galerie
+Le composant `CaseStudyGallery` SHALL rendre toutes ses vignettes au même format, sans traitement particulier du premier visuel, quel que soit le nombre d'images de la galerie.
+
+#### Scenario: Toutes les vignettes à la même taille
+- **WHEN** une page case study affiche une galerie de 3 visuels ou plus
+- **THEN** chaque vignette a le même ratio et la même largeur, et aucune ne s'étend sur plusieurs colonnes
+
+#### Scenario: Grille sans cellule orpheline sur un nombre pair
+- **WHEN** une galerie contient un nombre pair de visuels et que la fenêtre est assez large pour deux colonnes
+- **THEN** toutes les rangées sont complètes
+
+#### Scenario: Colonne unique en mobile
+- **WHEN** la page case study est affichée dans une fenêtre de moins de 640 px de large
+- **THEN** les vignettes s'empilent sur une seule colonne, sans débordement horizontal de la page
