@@ -2,6 +2,7 @@
 
 <!-- synced from change: case-study-pages — 2026-05-28 -->
 <!-- synced from change: add-project-sacem — 2026-06-17 -->
+<!-- synced from change: add-project-multi-agents-studio — 2026-10-14 -->
 
 ### Requirement: Source de données projets centralisée
 Un fichier `src/data/projects.ts` SHALL exister et exporter un tableau typé `PROJECTS` contenant toutes les données des projets utilisées à la fois par la homepage et les pages case study.
@@ -39,6 +40,14 @@ Chaque projet SHALL avoir un `id` unique en kebab-case servant de slug URL (`/pr
 #### Scenario: Slugs sans caractères spéciaux
 - **WHEN** on consulte les ids des projets
 - **THEN** tous les ids sont en kebab-case ASCII (pas d'accents, pas d'espaces)
+
+#### Scenario: Slug "multi-agents-studio" présent et unique
+- **WHEN** on filtre le tableau PROJECTS sur `id === "multi-agents-studio"`
+- **THEN** exactement un résultat est retourné
+
+#### Scenario: TypeScript accepte l'entrée Multi-Agents Studio sans erreur
+- **WHEN** TypeScript compile le projet (`tsc --noEmit`)
+- **THEN** aucune erreur de type n'est levée pour l'objet Multi-Agents Studio dans PROJECTS
 
 ---
 

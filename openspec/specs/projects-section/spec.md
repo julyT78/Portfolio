@@ -3,6 +3,7 @@
 <!-- synced from change: case-study-pages — 2026-05-28 -->
 <!-- synced from change: add-project-sacem — 2026-06-17 -->
 <!-- synced from change: reorder-project-sacem-first — 2026-06-17 -->
+<!-- synced from change: add-project-multi-agents-studio — 2026-10-14 -->
 
 ### Requirement: Lien "Voir le cas" pointe vers la page case study
 Le bouton/lien "Voir le cas →" de chaque card projet SHALL pointer vers `/[locale]/projects/[id]` au lieu de `#projets`.
@@ -18,6 +19,10 @@ Le bouton/lien "Voir le cas →" de chaque card projet SHALL pointer vers `/[loc
 #### Scenario: href utilise la locale courante
 - **WHEN** le visiteur est sur la version anglaise du site (`/en`)
 - **THEN** le lien de la card pointe vers `/en/projects/[slug]`
+
+#### Scenario: Lien "Voir le cas" pointe vers /projects/multi-agents-studio
+- **WHEN** un visiteur clique sur "Voir le cas →" sur la card Multi-Agents Studio
+- **THEN** il est redirigé vers `/[locale]/projects/multi-agents-studio` sans erreur 404
 
 ---
 
@@ -40,3 +45,12 @@ La section Projets de la homepage SHALL afficher le projet Sacem en première po
 #### Scenario: Sacem est la première card visible
 - **WHEN** un visiteur charge la homepage
 - **THEN** la card du projet Sacem est affichée en première position dans la grille projets, avant toutes les autres cards
+
+---
+
+### Requirement: Card Multi-Agents Studio visible dans la section Projets homepage
+La section Projets de la homepage SHALL afficher une card pour le projet Multi-Agents Studio dès que l'entrée est présente dans PROJECTS.
+
+#### Scenario: Card Multi-Agents Studio affichée sur la homepage
+- **WHEN** un visiteur charge la homepage
+- **THEN** une card avec le titre du projet Multi-Agents Studio et la couleur `bg-mint` est visible dans la grille projets

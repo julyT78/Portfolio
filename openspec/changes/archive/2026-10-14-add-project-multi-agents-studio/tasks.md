@@ -8,7 +8,7 @@
   - `Capture d'écran 2026-09-08 à 14.44.03.png` → `multi-agent-studio-parcours-tech-lead.png`
   - `Capture d'écran 2026-10-14 à 08.19.47.png` → `getup-forward-dashboard.png`
   - `Capture d'écran 2026-10-14 à 08.20.42.png` → `getup-forward-niveau-1.png`
-- [ ] 1.3 Vérifier que chaque fichier est accessible via son URL `/images/projects/multi-agents-studio/<nom>.png` (lancer le dev server si besoin)
+- [x] 1.3 Vérifier que chaque fichier est accessible via son URL `/images/projects/multi-agents-studio/<nom>.png` (lancer le dev server si besoin)
 
 ## 2. Données projet dans projects.ts
 

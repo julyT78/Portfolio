@@ -2,6 +2,7 @@
 
 <!-- synced from change: project-case-study-page — 2026-05-29 -->
 <!-- synced from change: add-project-sacem — 2026-06-17 -->
+<!-- synced from change: add-project-multi-agents-studio — 2026-10-14 -->
 
 ### Requirement: Route case study accessible et pré-rendue
 La route `/[locale]/projects/[slug]` SHALL exister pour chaque slug de projet défini dans `src/data/projects.ts` et retourner HTTP 200. Les pages SHALL être générées statiquement via `generateStaticParams`.
@@ -134,3 +135,46 @@ La page case study Sacem SHALL afficher le contexte CENSO, la démarche UX en é
 #### Scenario: Image ecran_sacem.png affichée
 - **WHEN** la page case study Sacem se charge
 - **THEN** l'image `/images/projects/sacem/ecran_sacem.png` est visible sans erreur 404
+
+---
+
+### Requirement: Route /projects/multi-agents-studio générée statiquement
+La route `/[locale]/projects/multi-agents-studio` SHALL être générée statiquement via `generateStaticParams` et retourner HTTP 200 pour les locales `fr` et `en`.
+
+#### Scenario: Accès à la page case study en français
+- **WHEN** un visiteur accède à `/fr/projects/multi-agents-studio`
+- **THEN** la page se charge avec statut 200 et affiche le contenu du projet Multi-Agents Studio
+
+#### Scenario: Accès à la page case study en anglais
+- **WHEN** un visiteur accède à `/en/projects/multi-agents-studio`
+- **THEN** la page se charge avec statut 200 et affiche le contenu du projet Multi-Agents Studio
+
+---
+
+### Requirement: Contenu narratif Multi-Agents Studio affiché dans la page case study
+La page case study Multi-Agents Studio SHALL afficher le contexte Docaposte/GETUP Forward, la démarche en étapes, et les résultats obtenus.
+
+#### Scenario: Section contexte visible
+- **WHEN** la page `/[locale]/projects/multi-agents-studio` se charge
+- **THEN** un bloc "Contexte" décrivant la plateforme GETUP Forward et ses 4 pôles est visible
+
+#### Scenario: Section démarche avec étapes de conception
+- **WHEN** la page case study Multi-Agents Studio se charge
+- **THEN** les étapes de la démarche (cadrage des 4 pôles, parcours utilisateur, framework multi-agents, tests utilisateurs) sont affichées dans l'ordre
+
+#### Scenario: Images de la galerie affichées
+- **WHEN** la page case study Multi-Agents Studio se charge
+- **THEN** au moins une image de `public/images/projects/multi-agents-studio/` est visible sans erreur 404
+
+---
+
+### Requirement: Modules AgentFlow, ChallengeModule et DeepDive affichés
+La page case study Multi-Agents Studio SHALL afficher les composants `CaseStudyAgentFlow`, `CaseStudyChallengeModule` et `CaseStudyDeepDive`, les données de l'entrée `multi-agents-studio` renseignant les trois champs correspondants.
+
+#### Scenario: Flux d'agents visible
+- **WHEN** la page case study Multi-Agents Studio se charge
+- **THEN** le composant `CaseStudyAgentFlow` affiche le flux orchestrateur → workers → guardians
+
+#### Scenario: Module défis visible
+- **WHEN** la page case study Multi-Agents Studio se charge
+- **THEN** le composant `CaseStudyChallengeModule` affiche les couples flaw/solution issus des tests utilisateurs
