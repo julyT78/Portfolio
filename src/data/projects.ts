@@ -451,6 +451,106 @@ export const PROJECTS: ProjectData[] = [
     ],
   },
 
+  {
+    id: "multi-agents-studio",
+    client: "Docaposte (La Poste)",
+    year: "2026",
+    title: "GETUP Forward — Multi-Agents Studio",
+    tagline: "Rendre l'IA apprenable, praticable et gouvernée pour toute l'entreprise",
+    tags: ["IA Design", "Multi-agents", "Gouvernance IA"],
+    color: "bg-mint",
+    image: "/images/projects/multi-agents-studio/getup-forward-dashboard.png",
+    href: "/projects/multi-agents-studio",
+    kpi: { value: "24", label: "agents IA orchestrés en 1 commande" },
+    deepDive:
+      "Conception d'une plateforme de formation IA à 4 pôles complémentaires (Formation, Studio IA, Assets, Gouvernance) ET du framework technique qui la sous-tend : Multi-Agent Studio, un Squad Enablement Kit générant 24 agents spécialisés (1 coordinateur, 18 workers, 5 guardians) à partir d'une configuration YAML projet en une seule commande. Ce même framework a orchestré la refonte CENSO/SACEM présentée ailleurs dans ce portfolio.",
+    context:
+      "Chez Docaposte, filiale du groupe La Poste, l'adoption de l'IA générative progresse vite mais de façon inégale : enthousiasme, pression et doutes se mélangent selon les profils. Connaître l'IA ne garantit pas son usage utile au quotidien, et sans espace commun, pratiques et outils se dispersent, fragilisant qualité et gouvernance. L'objectif : une plateforme GETUP Forward structurée en 4 pôles continus — Apprendre (Formation), Expérimenter (Studio IA), Produire (Assets), Partager (Gouvernance) — et un framework d'orchestration multi-agents prêt à l'emploi pour les équipes techniques.",
+    role: "Product Design & Orchestration IA — UX Research, Design System, Framework multi-agents",
+    duration: "Mars 2026 — en cours",
+    approach: [
+      {
+        step: "1",
+        title: "Cadrage des 4 pôles complémentaires",
+        body: "Définition de l'architecture produit : Formation (parcours, modules, certifications), Studio IA (sandbox, tests de prompts, comparaison de modèles), Assets (marketplace d'agents, prompts et workflows réutilisables) et Gouvernance (validation et certification des actifs). Ces quatre pôles forment une chaîne continue, pas quatre outils séparés.",
+      },
+      {
+        step: "2",
+        title: "Parcours utilisateur « De la découverte à la contribution »",
+        body: "Conception du parcours GETUP Forward : déclaration du profil (rôle, niveau, contexte) à l'inscription, progression adaptée plutôt qu'un contenu unique pour tous, exercices ancrés dans des situations métier, puis accès aux actifs IA validés et contribution progressive au patrimoine collectif.",
+      },
+      {
+        step: "3",
+        title: "Framework d'orchestration multi-agents",
+        body: "Conception du Squad Enablement Kit : à partir d'une configuration YAML projet, génération de 24 agents spécialisés (coordinateur, workers métier, guardians qualité/sécurité) en une seule commande. Catalogue d'agents, parcours d'adoption Tech Lead sur 6 semaines, documentation et playbooks d'intégration.",
+      },
+      {
+        step: "4",
+        title: "Tests utilisateurs et plan de passage à l'échelle",
+        body: "Campagne de tests sur 3 semaines (15 testeurs, profils designers/développeurs/commercial), mesure du score SUS et de la progression. Structuration du plan de passage de relais technique : séparation claire entre responsabilité Product Design et responsabilité Transformation Digitale/Tech, backlog priorisé (authentification, backend, sécurité).",
+      },
+    ],
+    results: [
+      "Score SUS de 76,2/100, au-dessus de la moyenne de référence (68)",
+      "6/6 testeurs trouvent l'outil facile et rapide à prendre en main, sans complexité inutile",
+      "Framework multi-agents : 24 agents spécialisés générés en 1 commande, vélocité cible x3 à x5",
+      "Plan de passage à l'échelle structuré : gouvernance, sécurité et équipe pluridisciplinaire dédiée validés pour la suite",
+    ],
+    gallery: [
+      "/images/projects/multi-agents-studio/getup-forward-dashboard.png",
+      "/images/projects/multi-agents-studio/getup-forward-niveau-1.png",
+      "/images/projects/multi-agents-studio/multi-agent-studio-hero.png",
+      "/images/projects/multi-agents-studio/multi-agent-studio-catalogue-agents.png",
+      "/images/projects/multi-agents-studio/multi-agent-studio-playbook-censo.png",
+      "/images/projects/multi-agents-studio/multi-agent-studio-parcours-tech-lead.png",
+    ],
+    challenges: [
+      {
+        flaw: "Contenu trop textuel et jargon technique",
+        flawDetail: "Leçons trop linéaires, manque d'illustrations et d'infographies, jargon technique rebutant pour les débutants, points clés mal mis en valeur (manque de gras, listes à puces, hiérarchie visuelle).",
+        solution: "Progression adaptée au profil et au rôle",
+        solutionDetail: "Le parcours se cale sur le rôle et le niveau déclarés à l'inscription plutôt qu'un contenu unique pour tous, avec des exercices concrets ancrés dans une situation métier après chaque notion.",
+      },
+      {
+        flaw: "Sections techniques mélangées au contenu généraliste",
+        flawDetail: "Sections dev/expert déstabilisantes pour les non-devs, contenu trop centré Python avec peu d'exemples JavaScript/TypeScript, module pratique inutilisable sans licence Claude.",
+        solution: "Structuration en 4 niveaux progressifs ciblés",
+        solutionDetail: "Structure en 4 niveaux (découverte, pratique, maîtrise, expertise) appréciée par les testeurs, qui avancent à leur rythme ; un développeur s'est porté volontaire pour contribuer du contenu JS/TS aux niveaux avancés.",
+      },
+      {
+        flaw: "Prototype hébergé en environnement personnel",
+        flawDetail: "Le prototype et son dépôt de code reposaient sur un environnement personnel (Vercel, repo perso) : risque pour la sécurité, la confidentialité, la conformité RGPD et la continuité de service.",
+        solution: "Plan de passage de relais structuré",
+        solutionDetail: "Transfert du code vers l'organisation GitHub de l'entreprise, backlog technique priorisé (authentification, backend, droits, sécurité), équipe agile pluridisciplinaire désignée pour la suite.",
+      },
+    ],
+    deepDiveSections: [
+      {
+        title: "Architecture en 4 pôles complémentaires",
+        body: "Formation (apprendre), Studio IA (expérimenter), Assets (produire) et Gouvernance (partager) forment une chaîne continue de l'acculturation à la contribution, pas quatre outils séparés. Chaque pôle répond à un niveau et un besoin différent, du collaborateur découvrant l'IA à l'expert qui enrichit le patrimoine collectif.",
+      },
+      {
+        title: "Framework d'orchestration multi-agents (Squad Enablement Kit)",
+        body: "À partir d'une configuration YAML projet, le framework génère 24 agents spécialisés (1 coordinateur, 18 workers, 5 guardians) en une seule commande. C'est ce même framework qui a orchestré la refonte CENSO/SACEM documentée ailleurs dans ce portfolio — la preuve que l'orchestration multi-agents conçue ici fonctionne en conditions réelles de production.",
+      },
+      {
+        title: "Validation utilisateur et score SUS",
+        body: "15 testeurs (3 designers, 2 développeurs, 1 commercial) sur une période de 3 semaines. Score SUS de 76,2/100, au-dessus de la moyenne de référence de 68. Tous les participants ont atteint au moins le Niveau 2 de progression, 2 ont atteint le Niveau 4.",
+      },
+      {
+        title: "Distinguer gouvernance produit et responsabilité technique",
+        body: "Face à l'urgence de sécuriser l'hébergement et les accès, une séparation claire a été actée : au Product Design l'expérience utilisateur, les parcours et les tests ; à la Transformation Digitale/Tech l'architecture, l'authentification et la sécurité. Cette clarification protège la qualité du passage à l'échelle sans bloquer la dynamique produit.",
+      },
+    ],
+    agentFlow: [
+      { node: "ENTRÉE", label: "Configuration YAML projet", type: "input" },
+      { node: "PROCESS", label: "Orchestrateur (Coordinator)", type: "process" },
+      { node: "DÉCISION", label: "Rôle métier requis ?", type: "decision" },
+      { node: "PROCESS", label: "18 Workers spécialisés", type: "process" },
+      { node: "PROCESS", label: "5 Guardians qualité/sécurité", type: "process" },
+      { node: "SORTIE", label: "24 agents prêts à l'emploi", type: "output" },
+    ],
+  },
 ];
 
 /** Trouve un projet par son slug (= id) */
