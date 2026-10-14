@@ -15,13 +15,16 @@
 ## 3. Mise à jour de la source de données
 
 - [x] 3.1 Dans `src/data/projects.ts`, remplacer le champ `image` de l'entrée `id: "sacem"` par `/images/projects/sacem/censo-cover.png`
-- [x] 3.2 Remplacer le champ `gallery` de l'entrée Sacem par les 5 chemins dans l'ordre : `censo-dashboard-admin.png`, `ecran_sacem.png`, `censo-declarations-panneau.png`, `censo-paiement-modale.png`, `censo-contraste-rgaa.png`
-- [x] 3.3 Vérifier qu'aucune autre entrée de `PROJECTS` ni aucun autre fichier ne référence encore `ecran_sacem.png` comme couverture
+- [x] 3.2 Remplacer le champ `gallery` de l'entrée Sacem par les 4 chemins dans l'ordre : `censo-dashboard-admin.png`, `censo-declarations-panneau.png`, `censo-paiement-modale.png`, `censo-contraste-rgaa.png`
+- [x] 3.3 Vérifier qu'aucune autre entrée de `PROJECTS` ni aucun autre fichier ne référence encore `ecran_sacem.png`
+- [x] 3.4 Supprimer `public/images/projects/sacem/ecran_sacem.png` en conservant la source dans `assets/Projets/Sacem/`
+- [x] 3.5 Dans `CaseStudyGallery.tsx`, retirer le cas particulier de mise en page du premier visuel pour une grille uniforme en 16/10
 
 ## 4. Validation
 
 - [x] 4.1 Lancer `npm run build` (ou `npx tsc --noEmit`) et confirmer l'absence d'erreur
 - [x] 4.2 Démarrer le serveur de dev et vérifier au navigateur que la card SACEM de la homepage affiche la nouvelle couverture
-- [x] 4.3 Ouvrir `/projects/sacem` et vérifier que la galerie affiche 5 visuels : le premier pleine largeur, les 4 suivants en grille 2x2
+- [x] 4.3 Ouvrir `/projects/sacem` et vérifier que la galerie affiche 4 visuels de taille identique en grille 2x2
 - [x] 4.4 Contrôler avec playwright-skill que la galerie reste lisible en mobile (colonne unique) et qu'aucun visuel n'est rogné au point de perdre son information principale
 - [x] 4.5 Vérifier dans l'onglet réseau que les 5 nouveaux chemins renvoient bien un statut 200
+- [x] 4.6 Contrôler les galeries Société Générale et Multi-Agents Studio après le changement de composant : vignettes de taille identique, rangées complètes

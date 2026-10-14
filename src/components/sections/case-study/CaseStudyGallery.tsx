@@ -18,11 +18,7 @@ export function CaseStudyGallery({ project, galleryLabel }: Props) {
           {project.gallery.map((src, i) => (
             <div
               key={src}
-              className={`relative rounded-[16px] overflow-hidden bg-ink/5 ${
-                i === 0 && project.gallery!.length >= 3
-                  ? "sm:col-span-2 aspect-[16/7]"
-                  : "aspect-[16/10]"
-              }`}
+              className="relative rounded-[16px] overflow-hidden bg-ink/5 aspect-[16/10]"
             >
               <Image
                 src={src}

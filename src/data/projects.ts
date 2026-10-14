@@ -92,7 +92,6 @@ export const PROJECTS: ProjectData[] = [
     ],
     gallery: [
       "/images/projects/sacem/censo-dashboard-admin.png",
-      "/images/projects/sacem/ecran_sacem.png",
       "/images/projects/sacem/censo-declarations-panneau.png",
       "/images/projects/sacem/censo-paiement-modale.png",
       "/images/projects/sacem/censo-contraste-rgaa.png",

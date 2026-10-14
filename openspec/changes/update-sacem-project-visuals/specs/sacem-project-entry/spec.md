@@ -21,7 +21,11 @@ Le tableau `PROJECTS` dans `src/data/projects.ts` SHALL contenir un objet `Proje
 
 #### Scenario: Galerie illustrant les parcours clés
 - **WHEN** on inspecte le champ `gallery` de l'entrée Sacem
-- **THEN** le tableau contient au moins 4 chemins distincts, tous situés sous `public/images/projects/sacem/`, couvrant le tableau de bord administrateur, le parcours de déclaration adhérent, le tunnel de paiement gestionnaire et la validation de contraste RGAA
+- **THEN** le tableau contient au moins 4 chemins distincts, tous situés sous `public/images/projects/sacem/`, couvrant le tableau de bord administrateur, la liste des déclarations fédération, le tunnel de paiement gestionnaire et la validation de contraste RGAA
+
+#### Scenario: Ancien visuel retiré
+- **WHEN** on inspecte le champ `gallery` de l'entrée Sacem et le dossier `public/images/projects/sacem/`
+- **THEN** `ecran_sacem.png` n'est référencé nulle part et le fichier n'est plus présent dans le dossier publié
 
 ## ADDED Requirements
 
