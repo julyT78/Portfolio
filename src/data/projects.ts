@@ -58,7 +58,7 @@ export const PROJECTS: ProjectData[] = [
     tagline: "Repenser la déclaration de séances musicales pour 3 profils fédération",
     tags: ["RGAA A1", "IA agent", "UX Research"],
     color: "bg-lilac",
-    image: "/images/projects/sacem/ecran_sacem.png",
+    image: "/images/projects/sacem/censo-cover.png",
     href: "/projects/sacem",
     kpi: { value: "106", label: "critères RGAA audités par IA" },
     deepDive:
@@ -91,7 +91,11 @@ export const PROJECTS: ProjectData[] = [
       "Meilleure lisibilité des informations métier et conformité RGAA A1 préparée",
     ],
     gallery: [
+      "/images/projects/sacem/censo-dashboard-admin.png",
       "/images/projects/sacem/ecran_sacem.png",
+      "/images/projects/sacem/censo-declarations-panneau.png",
+      "/images/projects/sacem/censo-paiement-modale.png",
+      "/images/projects/sacem/censo-contraste-rgaa.png",
     ],
   },
 

@@ -66,3 +66,12 @@ tsconfig.tsbuildinfo
 /*.jpg
 .superpowers/
 .vercel
+
+# ─── Sources contenant des données personnelles ──────────────────────────────
+# Captures CENSO brutes : noms, e-mails et téléphones d'adhérents en clair.
+# Les versions floutées publiées dans public/images/projects/sacem/ sont, elles, versionnées.
+assets/Projets/Sacem/Capture d'écran 2026-09-07 122335.png
+assets/Projets/Sacem/Capture d'écran 2026-09-07 123013.png
+assets/Projets/Sacem/Capture d'écran 2026-09-07 123023.png
+assets/Projets/Sacem/Capture d'écran 2026-09-07 123045.png
+assets/Projets/Sacem/gestionnaire_btn_paiement.png
